@@ -1,0 +1,94 @@
+.main-header{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+
+.top-nav {
+    background-color: rgba(0, 0, 0, 0.2);
+
+    .contact-info  {
+
+            a {
+                color: #b9b9b8;
+                font-weight: 500;
+                font-size: 13px;
+                i{
+                    color: #ffb923;
+                    padding-left: 5px;
+                }
+            }
+
+
+        }
+
+    .header-help-and-social {
+        .social-links {
+
+            a {
+                i {
+
+                    font-size: 13px;
+                    color: #b9b9b8;
+                    text-transform: capitalize;
+                    padding-left: 5px;
+                }
+            }
+
+        }
+
+
+        .help-desk {
+
+            a {
+
+                color: #b9b9b8;
+                font-weight: 500;
+                font-size: 13px;
+
+            }
+
+        }
+
+
+
+    }
+
+}
+.bottom-nav{
+    background-color: rgba(0, 0, 0, 0.2);
+border-bottom: 1px solid 	rgba(243, 156, 18, 0.4);
+border-top: 1px dashed rgba(243, 156, 18, 0.4);
+;
+ .navbar-nav{
+    .nav-item{
+
+        a{
+            font-size: 14px;
+            color: #fff;
+          
+        }
+        a.active {
+             color: #ffb923!important;
+        }
+     }
+     
+ } 
+
+ .quote-btn{
+    .quote-btn-style{
+        background-color: #ffb923;
+        color: #fff;
+        display: inline-block;
+        cursor: pointer;
+        padding: 8px 20px;
+        font-size: 15px;
+    }
+}
+
+
+
+}
+}
+

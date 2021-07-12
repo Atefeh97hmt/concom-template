@@ -1,0 +1,39 @@
+body {
+    font-family: 'iransans' !important;
+    direction: rtl;
+overflow-x: hidden;
+}
+:focus{
+    outline: 0px solid transparent !important;
+}
+p {
+    margin: 0
+}
+
+.dri_rtl {
+    direction: rtl
+}
+
+.dri_ltr {
+    direction: ltr
+}
+
+.w-50 {
+    width: 50%
+}
+
+.white-bg {
+    background: #fff
+}
+
+.white-color {
+    color: #fff !important
+}
+
+.red-color {
+    color: #EB5757 !important;
+}
+a{
+    text-decoration: none;
+
+}

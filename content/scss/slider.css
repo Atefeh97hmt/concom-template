@@ -1,0 +1,16 @@
+.slider {
+  width: 100%;
+  position: relative;
+  direction: ltr;
+}
+
+.slider .slide {
+  margin: 0px 20px;
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+}
+
+.slider .slide img {
+  width: 100%;
+}
+/*# sourceMappingURL=slider.css.map */

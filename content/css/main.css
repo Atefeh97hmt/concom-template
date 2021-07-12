@@ -1,0 +1,52 @@
+@font-face {
+  font-family: "iransans";
+  src: url("/content/fonts/IransansFaNum/ttf/IRANSansWebFaNum.ttf"), url("/content/fonts/IransansFaNum/eot/IRANSansWebFaNum.eot"), url("/content/fonts/IransansFaNum/woff/IRANSansWebFaNum.woff"), url("/content/fonts/woff2/IransansFaNum/IRANSansWebFaNum.woff2");
+}
+body {
+  font-family: "iransans" !important;
+  direction: rtl;
+}
+
+:focus {
+  outline: 0px solid transparent !important;
+}
+
+p {
+  margin: 0;
+}
+
+.dri_rtl {
+  direction: rtl;
+}
+
+.dri_ltr {
+  direction: ltr;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.white-bg {
+  background: #fff;
+}
+
+.white-color {
+  color: #fff !important;
+}
+
+.red-color {
+  color: #EB5757 !important;
+}
+
+.top-nav .header-help-and-social .social-links a {
+  text-decoration: none;
+}
+.top-nav .header-help-and-social .social-links a i {
+  font-size: 13px;
+  color: #b9b9b8;
+  text-transform: capitalize;
+  padding-left: 15px;
+}
+
+/*# sourceMappingURL=main.css.map */

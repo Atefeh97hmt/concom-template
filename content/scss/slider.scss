@@ -1,0 +1,15 @@
+
+.slider {
+    width:100%;
+       position: relative;
+       direction: ltr;
+
+       .slide {
+        margin: 0px 20px;
+        transition: all ease-in-out .3s;
+        img {
+            width: 100%;}
+      }
+    }
+    
+   
