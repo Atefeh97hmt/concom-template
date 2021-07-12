@@ -7,7 +7,6 @@
         speed: 800,
         dots: true,
         infinite: true,
-        variableWidth: true,
 	});
 	
     });
