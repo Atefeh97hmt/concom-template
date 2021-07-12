@@ -213,10 +213,9 @@ a {
 
 .section-title h4 {
   font-size: 16px;
-  color: #777;
-  text-transform: capitalize;
+  color: #414141;
   position: relative;
-  margin-left: 37px;
+  margin-right: 37px;
   margin-bottom: 15px;
 }
 
@@ -237,14 +236,13 @@ a {
 .section-title h4 h2 {
   font-size: 30px;
   color: #414141;
-  text-transform: capitalize;
-  font-weight: 700;
-  line-height: 47px;
+  font-weight: 500;
+  line-height: 30px;
   margin-bottom: 15px;
 }
 
 .section-title h4 p {
-  color: #777;
+  color: #414141;
   font-size: 16px;
   margin-bottom: 20px;
 }
