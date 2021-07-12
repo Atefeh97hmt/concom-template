@@ -246,4 +246,27 @@ a {
   font-size: 16px;
   margin-bottom: 20px;
 }
+
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  cursor: pointer;
+  z-index: 9999;
+  background-color: #696969;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.back-to-top i {
+  color: #ffb923;
+  position: absolute;
+  right: 12px;
+  top: 11px;
+  text-align: center;
+  font-size: 18px;
+}
 /*# sourceMappingURL=main.css.map */
