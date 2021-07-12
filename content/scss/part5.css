@@ -16,11 +16,7 @@
   bottom: 5px;
 }
 
-.section-title h4 h2 span {
-  color: #ffb923;
-}
-
-.section-title h4 h2 {
+.section-title h2 {
   font-size: 30px;
   color: #414141;
   font-weight: 500;
@@ -28,7 +24,11 @@
   margin-bottom: 15px;
 }
 
-.section-title h4 p {
+.section-title h2 span {
+  color: #ffb923;
+}
+
+.section-title p {
   color: #414141;
   font-size: 16px;
   margin-bottom: 20px;

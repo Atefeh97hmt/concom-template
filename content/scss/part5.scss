@@ -1,4 +1,5 @@
-.section-title h4 {
+.section-title {
+h4 {
     font-size: 16px;
     color: #414141;
     position: relative;
@@ -12,11 +13,7 @@
         background-color: #ffb923;
         right: -25px;
         bottom: 5px;
-    }
- h2 {
-     span {
-    color: #ffb923;
-}}
+    }}
 
 h2 {
     font-size: 30px;
@@ -24,6 +21,10 @@ h2 {
     font-weight: 500;
     line-height:30px;
     margin-bottom: 15px;
+    
+        span {
+       color: #ffb923;
+   }
 }
 
  p {
