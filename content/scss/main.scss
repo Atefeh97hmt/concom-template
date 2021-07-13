@@ -1,11 +1,12 @@
-@import "_fonts";
-@import "_variables";
+@import "_font";
+@import "_variable";
 @import "_mixin";
-@import "_standards";
+@import "_standard";
 
 
  @import "header";
  @import "slider";
+ @import "section-title";
  @import "part1";
  @import "part5";
  @import "part6";

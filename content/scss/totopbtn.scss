@@ -4,7 +4,7 @@
     left: 20px;
     cursor: pointer;
     z-index: 9999;
-    background-color: #696969;
+    background-color: $dark-gray;
     width: 40px;
     height: 40px;
     -webkit-border-radius: 50%;
@@ -13,7 +13,7 @@
     transition: all .5s;
 
     i{
-        color: #ffb923;
+        color: $base-color;
         position: absolute;
         right: 12px;
         top: 11px;

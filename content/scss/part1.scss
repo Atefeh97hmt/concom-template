@@ -6,43 +6,42 @@
 
     .single-box {
         position: relative;
-        background-color: #fff;
+        background-color:$white-color;
         padding: 60px 33px 50px;
-        -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+        -webkit-box-shadow: 0 1px 3px rgba($black-color, 0.12), 0 1px 2px rgba($black-color, 0.24);
+        box-shadow: 0 1px 3px rgba($black-color, 0.12), 0 1px 2px rgba($black-color, 0.24);
 
         i {
             font-size: 50px;
-            color: #ffb923
+            color: $base-color
         }
 
         h3 {
             font-size: 18px;
-            color: #414141;
+            color: $dark-gray;
             font-weight: 700;
-            text-transform: capitalize;
             margin: 26px 0 13px;
         }
 
         p {
             font-size: 16px;
-            color: #777;
+            color: $dark-gray;
             line-height: 29px;
         }
 
     }
 .black-box{
-    background-color: #1b1b1b;
-    box-shadow: 0 0 15px #1b1b1b;
+    background-color:$black-color;
+    box-shadow: 0 0 15px $light-black;
     position: relative;
     z-index: 1;
     h3 {
-        color: #fff;
+        color: $white-color;
       
     }
 
     p {
-        color: #fff;
+        color: $white-color;
 
     }
   &:before {
@@ -55,7 +54,7 @@
         margin-left: 0;
         font-size: 265px;
         font-weight: 700;
-        color: #222;
+        color: $dark-gray;
         z-index: -1;
     }
 }
@@ -69,7 +68,7 @@
             right: -4px;
             width: 150px;
             height: 150px;
-            background-color: #ffb923;
+            background-color: $base-color;
             z-index: -1;
             -webkit-transition: .5s;
             transition: .5s;
@@ -85,7 +84,7 @@
             left: -4px;
             width: 150px;
             height: 150px;
-            background-color: #ffb923;
+            background-color: $base-color;
             z-index: -1;
             -webkit-transition: .5s;
             transition: .5s;

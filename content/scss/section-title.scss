@@ -1,0 +1,38 @@
+.section-title {
+    h4 {
+        font-size: 16px;
+        color: $dark-gray;
+        position: relative;
+        margin-right: 37px;
+        margin-bottom: 15px;
+        &:before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 2px;
+            background-color: $base-color;
+            right: -25px;
+            bottom: 5px;
+        }}
+    
+    h2 {
+        font-size: 30px;
+        color: $dark-gray;
+        font-weight: 500;
+        line-height:30px;
+        margin-bottom: 15px;
+        
+            span {
+           color: $base-color;
+       }
+    }
+    
+     p {
+        color: $dark-gray;
+        font-size: $font-size-15;
+        margin-bottom: 20px;
+    }
+    
+    
+    }
+    

@@ -6,16 +6,16 @@
     z-index: 100;
 
 .top-nav {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: $black-rgba;
 
     .contact-info  {
 
             a {
-                color: #b9b9b8;
+                color: $light-gray;
                 font-weight: 500;
-                font-size: 13px;
+                font-size: $font-size-13;
                 i{
-                    color: #ffb923;
+                    color: $base-color;
                     padding-left: 5px;
                 }
             }
@@ -29,48 +29,35 @@
             a {
                 i {
 
-                    font-size: 13px;
-                    color: #b9b9b8;
-                    text-transform: capitalize;
+                    font-size: $font-size-13;
+                    color: $light-gray;
                     padding-left: 5px;
                 }
             }
 
         }
-
-
         .help-desk {
-
             a {
-
-                color: #b9b9b8;
+                color: $light-gray;
                 font-weight: 500;
-                font-size: 13px;
-
+                font-size: $font-size-13;
             }
-
         }
-
-
-
     }
 
 }
 .bottom-nav{
-    background-color: rgba(0, 0, 0, 0.2);
-border-bottom: 1px solid 	rgba(243, 156, 18, 0.4);
-border-top: 1px dashed rgba(243, 156, 18, 0.4);
-;
+    background-color: $black-rgba;
+border-bottom: 1px solid $base-color-rgba;
+border-top: 1px dashed $base-color-rgba;
  .navbar-nav{
     .nav-item{
-
         a{
-            font-size: 14px;
-            color: #fff;
-          
+            font-size: $font-size-14;
+            color: $white-color;
         }
         a.active {
-             color: #ffb923!important;
+             color: $base-color!important;
         }
      }
      
@@ -78,12 +65,12 @@ border-top: 1px dashed rgba(243, 156, 18, 0.4);
 
  .quote-btn{
     .quote-btn-style{
-        background-color: #ffb923;
-        color: #fff;
+        background-color: $base-color;
+        color: $white-color;
         display: inline-block;
         cursor: pointer;
         padding: 8px 20px;
-        font-size: 15px;
+        font-size: $font-size-15;
     }
 }
 
