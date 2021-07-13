@@ -1,7 +1,5 @@
-﻿
-var scrollToTopBtn = document.getElementById("toTop")
+﻿var scrollToTopBtn = document.getElementById("toTop")
 var rootElement = document.documentElement
-
 function scrollToTop() {
   rootElement.scrollTo({
     top: 0,
@@ -10,7 +8,17 @@ function scrollToTop() {
 }
 scrollToTopBtn.addEventListener("click", scrollToTop)
 
+
 $(document).ready(function() {
+  $(".partner-slider").slick({    
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1800,
+    speed: 800,
+    dots: false,
+    infinite: false,
+});
 	$(".hero-slider").slick({    
         slidesToShow: 1,
         slidesToScroll: 1,
@@ -19,6 +27,8 @@ $(document).ready(function() {
         speed: 800,
         dots: true,
         infinite: true,
-	});
+  });
+  
+ 
 	
     });

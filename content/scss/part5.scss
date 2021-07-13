@@ -35,3 +35,25 @@ h2 {
 
 
 }
+.container1 {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+  }
+  .ele {
+    height:100px;
+    flex-basis: calc(100% / 6);
+    border:1px solid black;
+    box-sizing: border-box;
+  }
+  .container1::after,
+  .container1::before {
+    content: '';
+    flex-basis: calc(100% / 12);
+  }
+  .container1::after {
+    order: 1;
+  }
+  .ele:nth-child(n+6) {
+    order: 2;
+  }

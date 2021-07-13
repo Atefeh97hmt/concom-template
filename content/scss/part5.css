@@ -33,4 +33,42 @@
   font-size: 16px;
   margin-bottom: 20px;
 }
+
+.container1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.ele {
+  height: 100px;
+  -ms-flex-preferred-size: calc(100% / 6);
+      flex-basis: calc(100% / 6);
+  border: 1px solid black;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container1::after,
+.container1::before {
+  content: '';
+  -ms-flex-preferred-size: calc(100% / 12);
+      flex-basis: calc(100% / 12);
+}
+
+.container1::after {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.ele:nth-child(n+6) {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
 /*# sourceMappingURL=part5.css.map */
