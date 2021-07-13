@@ -1,9 +1,9 @@
-.partner-section{
-    background-image: url('/content/image/partner-bg.png');
+.part12{
+    background-image: url('/content/image/position-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    padding: 50px 0;
+    padding: 10px;
     position: relative;
     height: 100%;
     width: 100%;
@@ -20,19 +20,3 @@
     }
    
 }
-
-
-.slider {
-    width:100%;
-       position: relative;
-       direction: ltr;
-
-       .slide {
-        margin: 0px 20px;
-        transition: all ease-in-out .3s;
-        img {
-            width: 100%;}
-      }
-    }
-    
-   

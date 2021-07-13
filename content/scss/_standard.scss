@@ -1,10 +1,17 @@
 body {
     font-family: 'iransans' !important;
+    box-sizing: border-box;
+    margin: 0;
     direction: rtl;
-overflow-x: hidden;
+    font-size: 14px;
+    line-height: 24px;
+    background-color: #fff;
+    text-align: right;
 }
-:focus{
-    outline: 0px solid transparent !important;
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
 p {
     margin: 0
@@ -36,4 +43,12 @@ p {
 a{
     text-decoration: none;
 
+}
+
+.ptb-70{
+    padding: 70px 0;
+}
+
+.mtb-70{
+    margin: 70px 0;
 }
