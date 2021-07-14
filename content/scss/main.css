@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'iransans';
   src: url("/content/fonts/IransansFaNum/ttf/IRANSansWebFaNum.ttf"), url("/content/fonts/IransansFaNum/eot/IRANSansWebFaNum.eot"), url("/content/fonts/IransansFaNum/woff/IRANSansWebFaNum.woff"), url("/content/fonts/woff2/IransansFaNum/IRANSansWebFaNum.woff2");
@@ -511,18 +512,18 @@ img {
 }
 
 .part11-box .single-box:before {
-  content: "\f10d";
+  content: "“";
   font-family: fontawesome;
   width: 100%;
   height: 100%;
   position: absolute;
-  left: 0;
-  top: 0px;
+  left: -155px;
+  top: 260px;
   margin-left: 0;
   font-size: 265px;
   font-weight: 700;
   color: #494949;
-  z-index: -1;
+  opacity: 0.3;
 }
 
 .part11-box .black-box {
@@ -530,7 +531,6 @@ img {
   -webkit-box-shadow: 0 0 15px #333333;
           box-shadow: 0 0 15px #333333;
   position: relative;
-  z-index: 1;
 }
 
 .part11-box .black-box h3 {
