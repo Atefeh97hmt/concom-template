@@ -5,6 +5,7 @@
         position: relative;
         margin-right: 37px;
         margin-bottom: 15px;
+        font-weight: $font-weight-500;
         &:before {
             content: "";
             position: absolute;
@@ -21,9 +22,11 @@
         font-weight: 500;
         line-height:30px;
         margin-bottom: 15px;
+        font-weight: $font-weight-500;
         
             span {
            color: $base-color;
+           font-weight: $font-weight-500;
        }
     }
     
@@ -31,6 +34,7 @@
         color: $dark-gray;
         font-size: $font-size-15;
         margin-bottom: 20px;
+        
     }
     
     

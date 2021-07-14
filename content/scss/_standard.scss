@@ -44,11 +44,19 @@ a{
     text-decoration: none;
 
 }
-
+img {
+    max-width: 100%;
+    height: auto;
+}
 .ptb-70{
     padding: 70px 0;
 }
 
 .mtb-70{
     margin: 70px 0;
+}
+
+.default-button{
+    background-color: $base-color;
+    color:$white-color;
 }

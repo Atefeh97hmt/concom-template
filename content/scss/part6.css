@@ -1,0 +1,16 @@
+.partner-section .slider {
+  width: 100%;
+  position: relative;
+  direction: ltr;
+}
+
+.partner-section .slider .slide {
+  margin: 0px 20px;
+  -webkit-transition: all ease-in-out .3s;
+  transition: all ease-in-out .3s;
+}
+
+.partner-section .slider .slide img {
+  width: 100%;
+}
+/*# sourceMappingURL=part6.css.map */
