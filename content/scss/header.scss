@@ -1,12 +1,16 @@
 .main-header{
-    overflow: hidden;
     position: fixed;
     top: 0;
+    right: 0;
     width: 100%;
     z-index: 100;
-
-.top-nav {
     background-color: $black-rgba;
+    .navbar-toggler{
+        i{
+            color: $base-color;
+            }
+    }
+.top-nav {
 
     .contact-info  {
 
@@ -47,14 +51,32 @@
 
 }
 .bottom-nav{
-    background-color: $black-rgba;
 border-bottom: 1px solid $base-color-rgba;
 border-top: 1px dashed $base-color-rgba;
  .navbar-nav{
     .nav-item{
+
+
+        .dropdown-menu{
+            background-color: $black-color;
+            text-align: right;
+            right: 0;
+           
+            a{
+                
+                    &:hover{
+                        background-color: $black-color;
+                        color:$base-color;
+
+                    }
+                
+            }
+        }
+        
         a{
             font-size: $font-size-14;
             color: $white-color;
+          
         }
         a.active {
              color: $base-color!important;
@@ -77,5 +99,24 @@ border-top: 1px dashed $base-color-rgba;
 
 
 }
+}
+
+.main-header.active{
+       
+    background: #000;
+    -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .flex-reverse-style{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .top-nav {
+        display: none;
+    }
 }
 

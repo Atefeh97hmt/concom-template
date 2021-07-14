@@ -71,15 +71,16 @@ img {
 }
 
 .main-header {
-  overflow: hidden;
   position: fixed;
   top: 0;
+  right: 0;
   width: 100%;
   z-index: 100;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
-.main-header .top-nav {
-  background-color: rgba(0, 0, 0, 0.2);
+.main-header .navbar-toggler i {
+  color: #ffb923;
 }
 
 .main-header .top-nav .contact-info a {
@@ -106,9 +107,19 @@ img {
 }
 
 .main-header .bottom-nav {
-  background-color: rgba(0, 0, 0, 0.2);
   border-bottom: 1px solid rgba(255, 185, 35, 0.4);
   border-top: 1px dashed rgba(255, 185, 35, 0.4);
+}
+
+.main-header .bottom-nav .navbar-nav .nav-item .dropdown-menu {
+  background-color: #000000;
+  text-align: right;
+  right: 0;
+}
+
+.main-header .bottom-nav .navbar-nav .nav-item .dropdown-menu a:hover {
+  background-color: #000000;
+  color: #ffb923;
 }
 
 .main-header .bottom-nav .navbar-nav .nav-item a {
@@ -127,6 +138,27 @@ img {
   cursor: pointer;
   padding: 8px 20px;
   font-size: 15px;
+}
+
+.main-header.active {
+  background: #000;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 768px) {
+  .flex-reverse-style {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .top-nav {
+    display: none;
+  }
 }
 
 .slider {

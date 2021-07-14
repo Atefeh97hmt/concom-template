@@ -1,12 +1,10 @@
-﻿var scrollToTopBtn = document.getElementById("toTop")
-var rootElement = document.documentElement
-function scrollToTop() {
-  rootElement.scrollTo({
-    top: 0,
-    behavior: "smooth"
-  })
-}
-scrollToTopBtn.addEventListener("click", scrollToTop)
+﻿$(window).on("scroll", function() {
+  if($(window).scrollTop() > 65) {
+      $(".main-header").addClass("active");
+  } else {
+     $(".main-header").removeClass("active");
+  }
+});
 
 
 $(document).ready(function() {
@@ -32,3 +30,12 @@ $(document).ready(function() {
  
 	
     });
+    var scrollToTopBtn = document.getElementById("toTop")
+    var rootElement = document.documentElement
+    function scrollToTop() {
+      rootElement.scrollTo({
+        top: 0,
+        behavior: "smooth"
+      })
+    }
+    scrollToTopBtn.addEventListener("click", scrollToTop)
