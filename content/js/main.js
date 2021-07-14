@@ -15,7 +15,7 @@ $(document).ready(function() {
     autoplaySpeed: 1800,
     speed: 800,
     dots: false,
-    infinite: false,
+    arrows:false,
 });
 	$(".hero-slider").slick({    
         slidesToShow: 1,
@@ -24,7 +24,10 @@ $(document).ready(function() {
         autoplaySpeed: 1800,
         speed: 800,
         dots: true,
-        infinite: true,
+        arrows:false,
+        centerMode: true,
+        centerPadding: '0px',
+
   });
   
  
