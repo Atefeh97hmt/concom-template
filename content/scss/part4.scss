@@ -1,0 +1,30 @@
+.whyus-section{
+background-color: rgb(245, 245, 245);
+.whyus-text{
+    h3 {
+        font-size: 16px;
+        color: #353535;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+p{
+    font-size: 14px;
+
+}}
+.whyus-icon{
+        width: 50px;
+    }
+
+
+
+    .whyus-button{
+    font-size: 16px;
+    color:$base-color;
+    font-weight: 700;
+    border-bottom: 2px solid $base-color;
+    border-radius: 0;
+    margin-top: 15px;
+    padding: 0;
+    }
+
+}

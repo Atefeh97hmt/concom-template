@@ -297,15 +297,43 @@ img {
 }
 
 .about-card h3 {
-  font-size: 18px;
+  font-size: 16px;
   color: #353535;
   font-weight: 700;
-  margin-right: 10px;
   margin-bottom: 10px;
 }
 
 .about-card i {
   font-size: 15px;
+}
+
+.whyus-section {
+  background-color: whitesmoke;
+}
+
+.whyus-section .whyus-text h3 {
+  font-size: 16px;
+  color: #353535;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.whyus-section .whyus-text p {
+  font-size: 14px;
+}
+
+.whyus-section .whyus-icon {
+  width: 50px;
+}
+
+.whyus-section .whyus-button {
+  font-size: 16px;
+  color: #ffb923;
+  font-weight: 700;
+  border-bottom: 2px solid #ffb923;
+  border-radius: 0;
+  margin-top: 15px;
+  padding: 0;
 }
 
 .tab-section img {
