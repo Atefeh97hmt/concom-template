@@ -1,0 +1,57 @@
+.part7{
+    margin-bottom: -40px;
+    .part7-card {
+       
+        background-color: #fff;
+        padding: 40px;
+        -webkit-box-shadow: 0 1px 10px rgba($black-color, 0.12), 0 1px 2px rgba($black-color, 0.24);
+        box-shadow: 0 1px 10px rgba($black-color, 0.12), 0 1px 2px rgba($black-color, 0.24);
+        position: relative;
+margin-bottom: 20px;
+         p {
+            font-size: 14px;
+            color: #777;
+            padding-bottom: 8px;
+            font-weight: 500;
+        }
+
+        h4 {
+            font-size: 16px;
+            color: #333;
+            font-weight: 700;
+            margin-bottom: 15px;
+            margin-top: 25px;
+        }
+        i {
+            color: #ffb923;
+            font-size: 50px;
+            display: inline-block;
+            -webkit-transition: all .5s;
+            transition: all .5s;
+            &:hover{
+                transform: rotate(360deg);
+            }
+        }
+
+        a {
+            font-size: 15px;
+            color: #262626;
+            font-weight: 500;
+            position: relative;
+            z-index: 1;
+
+
+            &:before {
+                content: "";
+                position: absolute;
+                bottom: 10px;
+                right: 67px;
+                width: 30px;
+                height: 2px;
+                background-color: #ffb923;
+                z-index: -1;
+            }
+        }
+    }
+}
+
