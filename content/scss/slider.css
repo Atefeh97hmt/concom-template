@@ -5,12 +5,19 @@
 }
 
 .slider .slide {
-  margin: 0px 20px;
+  margin: 0px;
   -webkit-transition: all ease-in-out .3s;
   transition: all ease-in-out .3s;
 }
 
 .slider .slide img {
   width: 100%;
+}
+
+.slider .slider-text {
+  position: absolute;
+  right: 200px;
+  bottom: 270px;
+  color: red;
 }
 /*# sourceMappingURL=slider.css.map */

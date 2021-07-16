@@ -5,14 +5,68 @@
        direction: ltr;
 
        .slide {
-        margin: 0px 20px;
+        margin: 0px;
         transition: all ease-in-out .3s;
         img {
             width: 100%;
-        
-          
           }
+      }
+      .slider-text{
+        position: absolute;
+        right: 200px;
+        bottom: 270px;
+        h5{
+          color:$base-color;
+          &:before{
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 2px;
+            background-color: $base-color;
+            right: -25px;
+            top:12px;
+          }
+        }
       }
     }
     
    
+    .hero-slider{
+      img {
+        height: 100vh;
+      }
+
+    }
+
+
+
+  //   .slick-dots li.slick-active button:before, .slick-dots li button{
+  //  display: none;
+  //   //   &:before {
+  //   //     content: "";
+  //   //           position: absolute;
+  //   //           width: 20px;
+  //   //           height: 1px;
+  //   //           background-color: $base-color;
+  //   //           right: -25px;
+  //   //           bottom: 5px;
+  //   // }
+  //   }
+    
+    
+  //   .slick-dots li button {
+  //     width: 20px!important;
+  //     height: 1px!important;
+  //     background-color: $base-color!important;
+  //     right: -25px!important;
+  //     bottom: 5px!important;
+  // }
+ 
+  // .slick-dots li.slick-active button {
+ 
+  //   width: 20px;
+  //   height: 1px;
+  //   background-color: $base-color;
+  //   right: -25px;
+  //   bottom: 5px;
+  // }

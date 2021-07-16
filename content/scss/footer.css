@@ -1,0 +1,61 @@
+.footer-top {
+  background-color: #333;
+  width: 100%;
+  height: 100%;
+  padding: 120px 0 70px;
+}
+
+.footer-top .footer-links .find-location {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  padding: 0;
+  position: relative;
+}
+
+.footer-top .footer-links p {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 32px;
+}
+
+.footer-top .footer-links h3 {
+  margin-bottom: 25px;
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.footer-top .footer-links ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.footer-top .footer-links ul li {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.footer-top .footer-links ul li span {
+  font-weight: 600;
+  color: #ffb923;
+}
+
+.footer-top .footer-links ul li a {
+  font-size: 15px;
+  display: inline-block;
+  color: #fff;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  position: relative;
+}
+
+.footer-top .footer-links ul li i {
+  display: inline-block;
+  margin-right: 5px;
+  color: #ffb923;
+}
+/*# sourceMappingURL=footer.css.map */
