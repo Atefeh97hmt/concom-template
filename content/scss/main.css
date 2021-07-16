@@ -91,7 +91,7 @@ img {
 }
 
 .main-header .top-nav .contact-info a {
-  color: #8f8f8f;
+  color: #c0bfbf;
   font-weight: 500;
   font-size: 13px;
 }
@@ -103,12 +103,12 @@ img {
 
 .main-header .top-nav .header-help-and-social .social-links a i {
   font-size: 13px;
-  color: #8f8f8f;
+  color: #c0bfbf;
   padding-left: 5px;
 }
 
 .main-header .top-nav .header-help-and-social .help-desk a {
-  color: #8f8f8f;
+  color: #c0bfbf;
   font-weight: 500;
   font-size: 13px;
 }
@@ -713,6 +713,7 @@ img {
 .form-section {
   margin-bottom: -20px;
   z-index: 1;
+  position: relative;
 }
 
 .form-section .infoForm .container {
@@ -761,10 +762,6 @@ img {
   display: inline-block;
 }
 
-.below-footer .social-links {
-  text-align: right;
-}
-
 .below-footer .social-links li a {
   background-color: #474747;
   width: 35px;
@@ -808,6 +805,7 @@ img {
 .default-button {
   background-color: #ffb923;
   color: #ffffff;
+  border-radius: 0;
 }
 
 .back-to-top {
