@@ -1,35 +1,35 @@
 .main-footer{
-background-color: #333;
+background-color: #131313;
     width: 100%;
     height: 100%;
-    padding: 120px 0 70px;
+    padding: 100px 0 60px;
     
     .footer-links{
-
-
         .find-location {
-            text-transform: capitalize;
-            font-size: 16px;
+            font-size: 14px;
             font-weight: 500;
             color: #fff;
             padding: 0;
-            position: relative;
         }
         p {
-            font-size: 16px;
+            font-size: 14px;
             color: #fff;
-            margin-bottom: 32px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+
         }
         h3 {
             margin-bottom: 25px;
-            font-size: 20px;
+            font-size: 16px;
             color: #fff;
-            font-weight: 600;
+            font-weight: 700;
         }
         ul {
             padding: 0;
             margin: 0;
             list-style-type: none;
+
+
             li {
             font-size: 14px;
             margin-bottom: 10px;
@@ -42,9 +42,6 @@ background-color: #333;
                 font-size: 15px;
                 display: inline-block;
                 color: #fff;
-                -webkit-transition: all .5s;
-                transition: all .5s;
-                position: relative;
             }
 
             i {
@@ -64,22 +61,21 @@ background-color: #333;
 .form-section {
     margin-bottom: -20px;
     z-index: 1;
-    position: relative;
   
     .infoForm {
       .container {
         -webkit-box-shadow: 0 1px 10px rgba($black-color, 0.12), 0 1px 2px rgba($black-color, 0.24);
         box-shadow: 0 1px 10px rgba($black-color, 0.12), 0 1px 2px rgba($black-color, 0.24);
-        padding: 50px;
+        padding: 45px;
         background-color: #fff;
       }
   
       .form-group {
         label {
-          font-size: 18px;
+          font-size: 16px;
           color: #313232;
           text-transform: capitalize;
-          font-weight: 500;
+          font-weight: 700;
           margin-bottom: 12px;
         }
   
@@ -95,46 +91,58 @@ background-color: #333;
     }
   }
 
-//   .footer-bottom {
-//     background-color: rgb(255, 214, 214);
-//     padding: 30px 0 23px;
-  
-//     .single-widget ul {
-//       li {
-//         display: inline-block;
-//         padding-right: 15px;
-  
-//         a {
-//           font-size: 14px;
-//           color: #a9a9a9;
-//           display: inline-block;
-//           position: relative;
-//           text-transform: capitalize;
-//           line-height: 40px;
-//         }
-//       }
-  
-//       padding: 0;
-//       margin: 0;
-//       list-style-type: none;
-//     }
-  
-//     .single-widgets .social-links li a {
-//       color: #a9a9a9;
-//       background-color: #474747;
-//       width: 30px;
-//       display: inline-block;
-//       height: 30px;
-//       border-radius: 50%;
-//       text-align: center;
-//       line-height: 29px;
-//       -webkit-transition: all .5s;
-//       transition: all .5s;
-//       margin-left: 7px;
-//     }
-//   }
 
 
-//   .footer-bottom .single-widgets .social-links {
-//     text-align: right;
-// }
+  
+  .below-footer {
+    background-color: #333;
+    padding: 30px 0 23px;
+    
+  ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+
+
+      li {
+        display: inline-block;
+        padding-right: 15px;
+  
+        a {
+          font-size: 14px;
+          color: #a9a9a9;
+          display: inline-block;
+        
+        }
+      }
+         
+      
+    }
+
+    .social-links { 
+
+           li{
+               
+            a {
+              background-color: #474747;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      
+      }
+        i{
+          color:#a8a8a8;
+      }
+     
+    
+    } 
+
+}
+   
+
+    }
+  
