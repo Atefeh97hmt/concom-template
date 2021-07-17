@@ -82,6 +82,10 @@ img {
   margin: 70px 0;
 }
 
+.z_index {
+  z-index: 1;
+}
+
 .main-header {
   position: fixed;
   top: 0;
@@ -558,6 +562,7 @@ img {
   height: 100%;
   background-color: #333333;
   opacity: .7;
+  z-index: 0;
 }
 
 .partner-section .slider {
@@ -772,6 +777,7 @@ img {
   width: 200px !important;
   height: 200px;
   border-radius: 50%;
+  margin: auto;
 }
 
 .team-black-circle a {
@@ -908,6 +914,7 @@ img {
   position: relative;
   height: 100%;
   width: 100%;
+  z-index: 0;
 }
 
 .part12::before {
