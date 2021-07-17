@@ -12,15 +12,6 @@ $(window).on("scroll", function () {
 ////// sliders //////////
 
 $(document).ready(function () {
-  $(".partner-slider").slick({
-    slidesToShow: 5,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 1800,
-    speed: 800,
-    dots: false,
-    arrows: false,
-  });
   $(".hero-slider").slick({
     slidesToShow: 1,
     slidesToScroll: 1,
@@ -33,6 +24,42 @@ $(document).ready(function () {
     centerMode: true,
     centerPadding: '0px',
   });
+  $(".partner-slider").slick({
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 1800,
+    speed: 800,
+    dots: false,
+    arrows: false,
+    responsive: [{
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1800,
+          speed: 800,
+          dots: false,
+          arrows: false,
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 1800,
+          speed: 800,
+          dots: false,
+          arrows: false,
+        }
+      }
+    ]
+
+  });
+
 });
 
 

@@ -3,14 +3,36 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px;
+  padding: 160px;
   width: 100%;
   height: 100%;
   position: relative;
+  z-index: -1;
 }
 
 .part8 .circle-counter {
   position: relative;
+  text-align: right;
+  margin-right: 50px;
+}
+
+.part8 .circle-counter p {
+  position: absolute;
+  right: 20px;
+}
+
+.part8 .circle-counter i {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 700;
+  position: relative;
+  top: -18px;
+  padding: 8px;
+}
+
+.part8 .circle-counter span {
+  font-size: 45px;
+  margin-top: 5px;
 }
 
 .part8 .circle-counter::before {
@@ -22,5 +44,11 @@
   height: 170px;
   border: 1px dashed #fff;
   border-radius: 50%;
+}
+
+@media (max-width: 767px) {
+  .circle-counter::before {
+    display: none;
+  }
 }
 /*# sourceMappingURL=part8.css.map */

@@ -64,6 +64,10 @@ div {
   color: #ffb923;
 }
 
+.blue-color {
+  color: #212381 !important;
+}
+
 a {
   text-decoration: none;
 }
@@ -436,15 +440,14 @@ img {
   transition: .5s;
 }
 
-.aboutus-section
-.about-second-img {
+.aboutus-section .about-second-img {
   position: absolute;
   top: 170px;
-  right: 5px;
+  right: 0px;
   border: 30px solid #ffffff;
 }
 
-.about-card {
+.aboutus-section .about-card {
   margin-bottom: 15px;
   background-color: #ffffff;
   padding: 20px 20px 20px 54px;
@@ -452,15 +455,40 @@ img {
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-.about-card h3 {
+.aboutus-section .about-card h3 {
   font-size: 16px;
   color: #353535;
   font-weight: 700;
   margin-bottom: 10px;
 }
 
-.about-card i {
+.aboutus-section .about-card i {
   font-size: 15px;
+  margin-left: 10px;
+}
+
+.aboutus-section .blue-icon:after {
+  background-color: #0087e7;
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 19px;
+  right: 0;
+  top: -2px;
+  margin-left: 0;
+  opacity: 0.3;
+}
+
+.aboutus-section .orange-icon:after {
+  background-color: #e77000;
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 19px;
+  right: 0;
+  top: -2px;
+  margin-left: 0;
+  opacity: 0.2;
 }
 
 .whyus-section {
@@ -615,7 +643,7 @@ img {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px;
+  padding: 140px;
   width: 100%;
   height: 100%;
   position: relative;
@@ -624,16 +652,21 @@ img {
 
 .part8 .circle-counter {
   position: relative;
+  margin-top: 30px;
 }
 
 .part8 .circle-counter p {
-  margin-right: 86px;
+  margin-right: 52px;
 }
 
 .part8 .circle-counter i {
   color: #ffffff;
   font-size: 30px;
   font-weight: bold;
+}
+
+.part8 .circle-counter span {
+  font-size: 35px;
 }
 
 .part8 .circle-counter::before {
@@ -647,13 +680,23 @@ img {
   border-radius: 50%;
 }
 
+@media (max-width: 767px) {
+  .circle-counter p {
+    text-align: left;
+    margin: 0;
+  }
+  .circle-counter::before {
+    display: none;
+  }
+}
+
 .part9 .team-bg {
   background-image: url("/content/image/team-bg.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 1000px;
+  height: 800px;
   position: relative;
 }
 
@@ -665,11 +708,11 @@ img {
   width: 100%;
   height: 100%;
   background-color: #171818;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .team-section {
-  margin-top: -746px;
+  margin-top: -590px;
   padding: 0 0 70px;
 }
 
@@ -700,7 +743,6 @@ img {
 .team-section .team-card .team-des h4 {
   font-size: 20px;
   color: #414141;
-  text-transform: capitalize;
   font-weight: 700;
   margin-bottom: 5px;
 }
@@ -708,7 +750,6 @@ img {
 .team-section .team-card .team-des p {
   font-size: 14px;
   color: #ffb923;
-  text-transform: uppercase;
   margin-bottom: 0;
 }
 
@@ -720,10 +761,6 @@ img {
 
 .team-section .team-card .team-icon i {
   color: #b6b6b6;
-  margin-left: 20px;
-  -webkit-transition: all .5s;
-  transition: all .5s;
-  line-height: 1.4;
 }
 
 .team-section .team-card .join-us h4 {
@@ -736,9 +773,28 @@ img {
 
 .team-black-circle {
   background-color: black;
-  width: 200px;
+  width: 200px !important;
   height: 200px;
   border-radius: 50%;
+}
+
+.team-black-circle a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team-black-circle a i {
+  font-size: 50px;
+  color: #ffb923;
 }
 
 .project-section {

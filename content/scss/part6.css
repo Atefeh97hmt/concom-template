@@ -1,3 +1,14 @@
+.partner-section {
+  background-image: url("/content/image/partner-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 50px 0;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
 .partner-section .slider {
   width: 100%;
   position: relative;

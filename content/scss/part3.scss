@@ -1,9 +1,9 @@
-.aboutus-section
+.aboutus-section{
 .about-second-img
  {
     position: absolute;
     top: 170px;
-    right: 5px;
+    right: 0px;
     border: 30px solid $white-color;
   
 }
@@ -16,11 +16,49 @@
     h3 {
         font-size: 16px;
         color: #353535;
-        font-weight: 700;
+        font-weight: $font-weight-700;
         margin-bottom: 10px;
     }
 
    
 i{
     font-size: 15px;
+    margin-left: 10px;
+
 }}
+
+
+.blue-icon{
+
+    &:after{
+        background-color: #0087e7;
+        content: "";
+        position: absolute;
+        width: 12px;
+        height: 19px;
+        right: 0;
+        top: -2px;
+        margin-left: 0;
+        opacity: 0.3;
+    }
+}
+
+
+.orange-icon{
+
+    &:after{
+        background-color: #e77000;
+        content: "";
+        position: absolute;
+        width: 12px;
+        height: 19px;
+        right: 0;
+        top: -2px;
+        margin-left: 0;
+        opacity: 0.2;
+    }
+}
+
+
+}
+
