@@ -1,1 +1,21 @@
-/* No CSS *//*# sourceMappingURL=part9.css.map */
+.part9 .team-bg {
+  background-image: url("/content/image/team-bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 1000px;
+  position: relative;
+}
+
+.part9 .team-bg:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #171818;
+  opacity: 0.6;
+}
+/*# sourceMappingURL=part9.css.map */

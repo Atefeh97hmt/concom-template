@@ -1,0 +1,63 @@
+.part12 {
+    background-image: url('/content/image/position-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 55px;
+    position: relative;
+    height: 100%;
+    width: 100%;
+
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $light-black;
+        opacity: .7;
+    }
+
+}
+
+.news {
+    .latest-news {
+        ul {
+            margin-top: 18px;
+            margin-bottom: 8px;
+
+            li {
+                display: inline-block;
+                font-size: 14px;
+                color: #666;
+            }
+        }
+
+        p {
+            font-size: 16px;
+            color: #777;
+            margin-bottom: 13px;
+        }
+
+        .read-more {
+            font-size: 15px;
+            color: #ffb923;
+            position: relative;
+
+
+        }
+
+        
+
+        h3 {
+            a {
+                font-size: 17px;
+                color: #212121;
+                font-weight: 600;
+                display: inline-block;
+                line-height: 26px;
+                margin-bottom: 10px;
+            }
+        }
+    }  }
