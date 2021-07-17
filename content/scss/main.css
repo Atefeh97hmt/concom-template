@@ -126,6 +126,7 @@ img {
 .main-header .bottom-nav .navbar-nav .nav-item .dropdown-menu {
   background-color: #000000;
   text-align: right;
+  right: 0;
 }
 
 .main-header .bottom-nav .navbar-nav .nav-item .dropdown-menu a:hover {
