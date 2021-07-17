@@ -28,6 +28,7 @@ $(document).ready(function () {
     autoplaySpeed: 1800,
     speed: 800,
     dots: true,
+    dotsClass: 'slide-dots',
     arrows: false,
     centerMode: true,
     centerPadding: '0px',
