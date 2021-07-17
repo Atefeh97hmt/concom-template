@@ -27,16 +27,13 @@ body::-webkit-scrollbar-thumb {
   background-color: #ffb923;
 }
 
-html, body {
+html,
+body {
   max-width: 100%;
   overflow-x: hidden;
 }
 
 p {
-  margin: 0;
-}
-
-div {
   margin: 0;
 }
 
@@ -65,7 +62,7 @@ div {
 }
 
 .blue-color {
-  color: #212381 !important;
+  color: #2839ce !important;
 }
 
 a {
@@ -306,12 +303,12 @@ img {
 }
 
 .section-title h4 {
-  font-size: 16px;
+  font-size: 15px;
   color: #494949;
   position: relative;
   margin-right: 37px;
   margin-bottom: 15px;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .section-title h4:before {
@@ -325,22 +322,21 @@ img {
 }
 
 .section-title h2 {
-  font-size: 30px;
+  font-size: 25px;
   color: #494949;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 30px;
   margin-bottom: 15px;
-  font-weight: 500;
 }
 
 .section-title h2 span {
   color: #ffb923;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .section-title p {
   color: #494949;
-  font-size: 15px;
+  font-size: 14px;
   margin-bottom: 20px;
 }
 
@@ -535,7 +531,8 @@ img {
   border-bottom: 1px solid #ebe8e8;
 }
 
-.tab-section .nav-pills .nav-link.active, .tab-section .nav-pills .show > .nav-link {
+.tab-section .nav-pills .nav-link.active,
+.tab-section .nav-pills .show > .nav-link {
   background-color: #ffb923;
   font-weight: 500;
 }
@@ -610,8 +607,6 @@ img {
   color: #ffb923;
   font-size: 50px;
   display: inline-block;
-  -webkit-transition: all .5s;
-  transition: all .5s;
 }
 
 .part7 .part7-card i:hover {
@@ -797,6 +792,12 @@ img {
   color: #ffb923;
 }
 
+@media (max-width: 768px) {
+  .team-section {
+    margin-top: 0;
+  }
+}
+
 .project-section {
   background-color: #000000;
   padding: 30px 12px 0 0;
@@ -814,7 +815,8 @@ img {
   border-radius: 0;
 }
 
-.project-section .nav-pills .nav-link.active, .project-section .nav-pills .show > .nav-link {
+.project-section .nav-pills .nav-link.active,
+.project-section .nav-pills .show > .nav-link {
   background-color: #ffb923;
 }
 
@@ -840,7 +842,7 @@ img {
 .part11-box .part11-title h2 {
   font-size: 30px;
   color: #494949;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 30px;
   margin-bottom: 15px;
 }
@@ -1114,8 +1116,6 @@ img {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  -webkit-transition: all .5s;
-  transition: all .5s;
 }
 
 .back-to-top i {

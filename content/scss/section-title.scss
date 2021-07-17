@@ -1,11 +1,12 @@
 .section-title {
     h4 {
-        font-size: 16px;
+        font-size: 15px;
         color: $dark-gray;
         position: relative;
         margin-right: 37px;
         margin-bottom: 15px;
-        font-weight: $font-weight-500;
+        font-weight: $font-weight-700;
+
         &:before {
             content: "";
             position: absolute;
@@ -14,28 +15,28 @@
             background-color: $base-color;
             right: -25px;
             bottom: 5px;
-        }}
-    
+        }
+    }
+
     h2 {
-        font-size: 30px;
+        font-size: 25px;
         color: $dark-gray;
-        font-weight: 500;
-        line-height:30px;
+        font-weight: $font-weight-700;
+        line-height: 30px;
         margin-bottom: 15px;
-        font-weight: $font-weight-500;
-      span {
-           color: $base-color;
-           font-weight: $font-weight-500;
-       }
+
+        span {
+            color: $base-color;
+            font-weight: $font-weight-700;
+        }
     }
-    
-     p {
+
+    p {
         color: $dark-gray;
-        font-size: $font-size-15;
+        font-size: $font-size-14;
         margin-bottom: 20px;
-        
+
     }
-    
-    
-    }
-    
+
+
+}

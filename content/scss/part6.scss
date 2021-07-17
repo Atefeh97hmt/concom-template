@@ -1,4 +1,4 @@
-.partner-section{
+.partner-section {
     background-image: url('/content/image/partner-bg.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -8,7 +8,7 @@
     height: 100%;
     width: 100%;
 
-    &::before{
+    &::before {
         content: "";
         position: absolute;
         bottom: 0;
@@ -18,21 +18,19 @@
         background-color: $light-black;
         opacity: .7;
     }
-   
-.slider {
-    width:100%;
-       position: relative;
-       direction: ltr;
 
-       .slide {
-        margin: 0px 20px;
-        transition: all ease-in-out .3s;
-        img {
-            width: 100%;}
-      }
+    .slider {
+        width: 100%;
+        position: relative;
+        direction: ltr;
+
+        .slide {
+            margin: 0px 20px;
+            transition: all ease-in-out .3s;
+
+            img {
+                width: 100%;
+            }
+        }
     }
 }
-
-
-    
-   

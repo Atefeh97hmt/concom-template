@@ -7,12 +7,9 @@
     background-color: $dark-gray;
     width: 40px;
     height: 40px;
-    -webkit-border-radius: 50%;
     border-radius: 50%;
-    -webkit-transition: all .5s;
-    transition: all .5s;
 
-    i{
+    i {
         color: $base-color;
         position: absolute;
         right: 12px;

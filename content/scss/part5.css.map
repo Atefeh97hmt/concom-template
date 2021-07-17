@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AACI,YADQ,CACR,GAAG,CAAA;EACC,SAAS,EAAE,IAAI;EACf,UAAU,EAAE,IAAI;CACnB",
-    "sources": [
-        "part5.scss"
-    ],
-    "names": [],
-    "file": "part5.css"
-}

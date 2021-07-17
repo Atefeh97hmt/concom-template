@@ -1,21 +1,25 @@
 .project-section {
     background-color: $black-color;
     padding: 30px 12px 0 0;
-    img{
-        width:500px;
-        height:200px;
+
+    img {
+        width: 500px;
+        height: 200px;
         max-width: 100%;
         max-height: 100%;
     }
-    .nav-link{
+
+    .nav-link {
         color: $white-color;
         border-radius: 0;
-        
-    }
-        .nav-pills {
-            .nav-link.active, .show > .nav-link {
-              background-color:   $base-color;
-            }
-          }
-}
 
+    }
+
+    .nav-pills {
+
+        .nav-link.active,
+        .show>.nav-link {
+            background-color: $base-color;
+        }
+    }
+}

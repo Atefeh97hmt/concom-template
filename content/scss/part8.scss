@@ -7,12 +7,14 @@
     width: 100%;
     height: 100%;
     position: relative;
-z-index: -1;
+    z-index: -1;
+
     .circle-counter {
         position: relative;
-margin-top: 30px;
+        margin-top: 30px;
+
         p {
-margin-right: 52px;
+            margin-right: 52px;
         }
 
         i {
@@ -20,9 +22,10 @@ margin-right: 52px;
             font-size: 30px;
             font-weight: bold;
         }
-span{
-    font-size: 35px;
-}
+
+        span {
+            font-size: 35px;
+        }
 
         &::before {
             content: "";
@@ -45,15 +48,16 @@ span{
 @media (max-width: 767px) {
 
     .circle-counter {
- p{
-     text-align: left;
-     margin: 0;
- }
-        &::before {
-         display: none;
+        p {
+            text-align: left;
+            margin: 0;
         }
-    
+
+        &::before {
+            display: none;
+        }
+
     }
-    
-  
+
+
 }
