@@ -542,10 +542,20 @@ img {
   font-size: 16px;
   color: #ffb923;
   font-weight: 700;
-  border-bottom: 2px solid #ffb923;
   border-radius: 0;
   margin-top: 15px;
   padding: 0;
+  position: relative;
+}
+
+.whyus-section .whyus-button:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #ffb923;
 }
 
 .tab-section img {
@@ -559,6 +569,10 @@ img {
   font-weight: 500;
 }
 
+.tab-section .nav-link:hover {
+  color: #ffb923;
+}
+
 .tab-section .nav-pills {
   border-bottom: 1px solid #ebe8e8;
 }
@@ -567,6 +581,11 @@ img {
 .tab-section .nav-pills .show > .nav-link {
   background-color: #ffb923;
   font-weight: 500;
+}
+
+.tab-section .nav-pills .nav-link.active:hover,
+.tab-section .nav-pills .show > .nav-link:hover {
+  color: #ffffff;
 }
 
 .partner-section {
@@ -619,6 +638,30 @@ img {
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   position: relative;
   margin-bottom: 20px;
+}
+
+.part7 .part7-card:hover {
+  background-color: black;
+}
+
+.part7 .part7-card:hover h4 {
+  color: #fff;
+}
+
+.part7 .part7-card:hover i {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+}
+
+.part7 .part7-card:hover a {
+  color: #ffb923;
+  position: relative;
+}
+
+.part7 .part7-card:hover a:before {
+  background-color: #ffb923;
 }
 
 .part7 .part7-card p {
@@ -697,7 +740,7 @@ img {
   font-size: 35px;
 }
 
-.part8 .circle-counter::before {
+.part8 .circle-counter:before {
   content: "";
   position: absolute;
   top: -62px;
@@ -753,6 +796,10 @@ img {
   z-index: 1;
 }
 
+.team-section .team-card:hover i {
+  color: #ffb923;
+}
+
 .team-section .team-card .team-img {
   position: relative;
   text-align: center;
@@ -768,14 +815,14 @@ img {
   position: relative;
 }
 
-.team-section .team-card .team-des h4 {
+.team-section .team-card h4 {
   font-size: 20px;
   color: #414141;
   font-weight: 700;
   margin-bottom: 5px;
 }
 
-.team-section .team-card .team-des p {
+.team-section .team-card p {
   font-size: 14px;
   color: #ffb923;
   margin-bottom: 0;
@@ -930,6 +977,10 @@ img {
 
 .part11-box .black-box p {
   color: #ffffff;
+}
+
+.part11-box .slick-slide img {
+  display: inline-block !important;
 }
 
 .part12 {
