@@ -1089,27 +1089,14 @@ img {
   color: #a8a8a8;
 }
 
-.rainbow-3:hover {
-  background-image: -webkit-gradient(linear, left top, right top, from(orange), color-stop(yellow), color-stop(#c6ffc6), color-stop(#a4a4ff), color-stop(#ddadff), to(#fc9f9f));
-  background-image: linear-gradient(to right, orange, yellow, #c6ffc6, #a4a4ff, #ddadff, #fc9f9f);
-  -webkit-animation: slidebg 2s linear infinite;
-          animation: slidebg 2s linear infinite;
-}
-
-@-webkit-keyframes slidebg {
-  to {
-    background-position: 20vw;
-  }
-}
-
-@keyframes slidebg {
-  to {
-    background-position: 20vw;
-  }
-}
-
 .default-button {
   background-color: #ffb923;
+  color: #ffffff;
+  border-radius: 0;
+}
+
+.default-button:hover {
+  background-color: #000000;
   color: #ffffff;
   border-radius: 0;
 }

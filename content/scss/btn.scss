@@ -1,20 +1,21 @@
-.rainbow-3{
-
-    &:hover{
-        background-image: linear-gradient(to right, orange, yellow, rgb(198, 255, 198), rgb(164, 164, 255), rgb(221, 173, 255), rgb(252, 159, 159));
-        animation:slidebg 2s linear infinite;
-      }
-}
-
-@keyframes slidebg {
-    to {
-      background-position:20vw;
-    }
-  }
-  
-
-  .default-button{
+// .rainbow-3{
+//     &:hover{
+//         background-image: linear-gradient(to right, orange, yellow, rgb(198, 255, 198), rgb(164, 164, 255), rgb(221, 173, 255), rgb(252, 159, 159));
+//         animation:slidebg 2s linear infinite;
+//       }
+// }
+// @keyframes slidebg {
+//     to {
+//       background-position:20vw;
+//     }
+//   }
+.default-button {
     background-color: $base-color;
-    color:$white-color;
+    color: $white-color;
     border-radius: 0;
+    &:hover {
+        background-color: $black-color;
+        color: $white-color;
+        border-radius: 0;
+    }
 }
