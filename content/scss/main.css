@@ -869,8 +869,13 @@ img {
 }
 
 .team-black-circle a i {
-  font-size: 50px;
+  font-size: 45px;
   color: #ffb923;
+}
+
+.team-black-circle:hover i {
+  font-size: 55px;
+  color: #ffffff !important;
 }
 
 @media (max-width: 768px) {
@@ -889,6 +894,7 @@ img {
   height: 200px;
   max-width: 100%;
   max-height: 100%;
+  display: block;
 }
 
 .project-section .nav-link {
@@ -899,6 +905,65 @@ img {
 .project-section .nav-pills .nav-link.active,
 .project-section .nav-pills .show > .nav-link {
   background-color: #ffb923;
+}
+
+.content {
+  position: relative;
+  margin: auto;
+  overflow: hidden;
+}
+
+.content .content-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 0;
+  -webkit-transition: all 0.4s ease-in-out 0s;
+  transition: all 0.4s ease-in-out 0s;
+}
+
+.content:hover .content-overlay {
+  opacity: 1;
+}
+
+.content-details {
+  position: absolute;
+  text-align: right;
+  padding-left: 1em;
+  padding-right: 1em;
+  width: 100%;
+  bottom: 0;
+  left: 50%;
+  opacity: 0;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.content-details h3 {
+  color: #ffb923;
+  font-size: 12px;
+  font-weight: 700;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+}
+
+.content-details p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.content:hover .content-details {
+  bottom: 0;
+  left: 50%;
+  opacity: 1;
 }
 
 .part11-box {
