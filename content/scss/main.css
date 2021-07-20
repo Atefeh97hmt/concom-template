@@ -890,7 +890,7 @@ img {
 }
 
 .project-section img {
-  width: 500px;
+  width: 100%;
   height: 200px;
   max-width: 100%;
   max-height: 100%;

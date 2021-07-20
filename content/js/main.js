@@ -9,6 +9,35 @@ $(window).on("scroll", function() {
 });
 
 
+
+const texts = ['برای شما پروژه ایجاد میکنیم.', 'ما دنیای جدیدی رو برای شما ایجاد میکنیم.', ];
+const display = document.querySelector('.typing-text');
+let textIndex = 0;
+let characterIndex = 0;
+display.classList.add('typing');
+
+setInterval(() => {
+
+    if (characterIndex === texts[textIndex].length) {
+        characterIndex = 0;
+        if (textIndex === texts.length - 1) {
+            textIndex = 0;
+        } else {
+            textIndex++;
+        }
+        display.innerHTML = '';
+        return;
+    }
+
+    display.innerHTML += texts[textIndex][characterIndex];
+    characterIndex++;
+
+}, 60);
+
+
+
+
+
 ////// sliders //////////
 
 $(document).ready(function() {
@@ -18,8 +47,8 @@ $(document).ready(function() {
         slidesToShow: 1,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 1800,
-        speed: 800,
+        autoplaySpeed: 2100,
+        speed: 1000,
         dots: true,
         dotsClass: 'slide-dots',
         arrows: false,
