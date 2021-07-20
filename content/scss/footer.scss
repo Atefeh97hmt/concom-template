@@ -50,9 +50,13 @@
                                     transition: width 0.3s ease 0s, left 0.3s ease 0s;
                                     width: 0;
                                 }
-                                &:hover:after {
-                                    width: 100%;
-                                    left: 0;
+                                &:hover {
+                                    color: $base-color;
+                                    ;
+                                    &:after {
+                                        width: 100%;
+                                        left: 0;
+                                    }
                                 }
                             }
                             i {
