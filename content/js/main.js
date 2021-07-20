@@ -26,14 +26,12 @@ $(document).ready(function() {
     });
 
     $(".customer-slider").slick({
+        centerMode: true,
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 1800,
         speed: 800,
-        dots: false,
-        arrows: false,
-        centerMode: true,
         centerPadding: '0px',
     });
     $(".partner-slider").slick({
@@ -72,11 +70,9 @@ $(document).ready(function() {
 
     });
 
+
 });
-// $('.customer-slider').on('beforeChange', function(event, slick, currentSlide, nextSlide) {
-//     $(".slick-slide").removeClass('works');
-//     $('.slick-current').addClass('works');
-// });
+
 
 ////// scrollToTopBtn //////////
 
