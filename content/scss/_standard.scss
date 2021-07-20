@@ -7,20 +7,15 @@ body {
     line-height: 24px;
     background-color: #fff;
     text-align: right;
-
-
     &::-webkit-scrollbar {
         width: 15px;
     }
-
     &::-webkit-scrollbar-track {
         -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
     }
-
     &::-webkit-scrollbar-thumb {
         background-color: #ffb923;
     }
-
 }
 
 html,
@@ -57,14 +52,12 @@ p {
     color: #ffb923;
 }
 
-
 .blue-color {
     color: #2839ce !important
 }
 
 a {
     text-decoration: none;
-
 }
 
 img {
@@ -80,6 +73,10 @@ img {
     margin: 70px 0;
 }
 
-.z_index{
+.z_index {
     z-index: 1;
+}
+
+.mt-30 {
+    margin-top: 30px
 }

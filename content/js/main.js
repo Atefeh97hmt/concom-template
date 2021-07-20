@@ -64,6 +64,31 @@ $(document).ready(function() {
         autoplaySpeed: 1800,
         speed: 800,
         centerPadding: '0px',
+        responsive: [{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 1800,
+                    speed: 800,
+                    dots: false,
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    autoplay: true,
+                    autoplaySpeed: 1800,
+                    speed: 800,
+                    dots: false,
+                    arrows: false,
+                }
+            }
+        ]
     });
     $(".partner-slider").slick({
         slidesToShow: 5,

@@ -36,11 +36,23 @@
                             }
                             a {
                                 font-size: 15px;
-                                display: inline-block;
                                 color: #fff;
-                                &:hover {
-                                    color: $base-color;
-                                    border-bottom: 2px solid $base-color;
+                                display: inline-block;
+                                position: relative;
+                                &:after {
+                                    bottom: -3px;
+                                    content: "";
+                                    display: block;
+                                    height: 1px;
+                                    left: 50%;
+                                    position: absolute;
+                                    background: $base-color;
+                                    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+                                    width: 0;
+                                }
+                                &:hover:after {
+                                    width: 100%;
+                                    left: 0;
                                 }
                             }
                             i {

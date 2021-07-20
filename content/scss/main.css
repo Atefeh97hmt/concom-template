@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'iransans';
-  src: url("/content/fonts/IransansFaNum/ttf/IRANSansWebFaNum.ttf"), url("/content/fonts/IransansFaNum/eot/IRANSansWebFaNum.eot"), url("/content/fonts/IransansFaNum/woff/IRANSansWebFaNum.woff"), url("/content/fonts/woff2/IransansFaNum/IRANSansWebFaNum.woff2");
+  src: url("content/fonts/IransansFaNum/ttf/IRANSansWebFaNum.ttf"), url("content/fonts/IransansFaNum/eot/IRANSansWebFaNum.eot"), url("content/fonts/IransansFaNum/woff/IRANSansWebFaNum.woff"), url("content/fonts/woff2/IransansFaNum/IRANSansWebFaNum.woff2");
 }
 
 body {
@@ -84,6 +84,10 @@ img {
 
 .z_index {
   z-index: 1;
+}
+
+.mt-30 {
+  margin-top: 30px;
 }
 
 .main-header {
@@ -751,6 +755,13 @@ img {
   border-radius: 50%;
 }
 
+.part8 .circle-counter:before:hover {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
+}
+
 @media (max-width: 767px) {
   .circle-counter p {
     text-align: left;
@@ -1183,13 +1194,27 @@ img {
 
 .main-footer .footer-links ul li a {
   font-size: 15px;
-  display: inline-block;
   color: #fff;
+  display: inline-block;
+  position: relative;
 }
 
-.main-footer .footer-links ul li a:hover {
-  color: #ffb923;
-  border-bottom: 2px solid #ffb923;
+.main-footer .footer-links ul li a:after {
+  bottom: -3px;
+  content: "";
+  display: block;
+  height: 1px;
+  left: 50%;
+  position: absolute;
+  background: #ffb923;
+  -webkit-transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+  width: 0;
+}
+
+.main-footer .footer-links ul li a:hover:after {
+  width: 100%;
+  left: 0;
 }
 
 .main-footer .footer-links ul li i {

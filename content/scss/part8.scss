@@ -31,6 +31,10 @@
             height: 170px;
             border: 1px dashed #fff;
             border-radius: 50%;
+            &:hover {
+                transition: 0.5s;
+                transform: rotateY( 360deg);
+            }
         }
     }
 }

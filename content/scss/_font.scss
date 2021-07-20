@@ -1,7 +1,4 @@
 @font-face {
-    font-family: 'iransans';
-    src: url("/content/fonts/IransansFaNum/ttf/IRANSansWebFaNum.ttf"),
-        url("/content/fonts/IransansFaNum/eot/IRANSansWebFaNum.eot"),
-        url("/content/fonts/IransansFaNum/woff/IRANSansWebFaNum.woff"),
-        url("/content/fonts/woff2/IransansFaNum/IRANSansWebFaNum.woff2");
+    font-family: 'iran-sans';
+    src: url('../fonts/iran-sans/iran-sans.eot') format('embedded-opentype'), url('../fonts/iran-sans/iran-sans.woff') format('woff'), url('../fonts/iran-sans/iran-sans.ttf') format('truetype');
 }
