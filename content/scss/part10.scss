@@ -38,58 +38,119 @@
     }
 }
 
+// .content {
+//     position: relative;
+//     margin: auto;
+//     overflow: hidden;
+//     .content-overlay {
+//         background: rgba(0, 0, 0, 0.7);
+//         position: absolute;
+//         height: 100%;
+//         width: 100%;
+//         left: 0;
+//         top: 0;
+//         bottom: 0;
+//         right: 0;
+//         opacity: 0;
+//         -webkit-transition: all 0.4s ease-in-out 0s;
+//         -moz-transition: all 0.4s ease-in-out 0s;
+//         transition: all 0.4s ease-in-out 0s;
+//     }
+//     &:hover .content-overlay {
+//         opacity: 1;
+//     }
+// }
+// .content-details {
+//     position: absolute;
+//     text-align: right;
+//     padding-left: 1em;
+//     padding-right: 1em;
+//     width: 100%;
+//     bottom: 0;
+//     left: 50%;
+//     opacity: 0;
+//     -webkit-transform: translate(-50%, -50%);
+//     transform: translate(-50%, -50%);
+//     // -webkit-transition: all 0.3s linear 0s;
+//     // transition: all 0.3s linear 0s;
+//     h3 {
+//         color: $base-color;
+//         font-size: 12px;
+//         font-weight: 700;
+//         margin-bottom: 0.5em;
+//         text-transform: uppercase;
+//     }
+//     p {
+//         color: #fff;
+//         font-size: 15px;
+//         font-weight: 700;
+//     }
+// }
+// .content:hover .content-details {
+//     bottom: 0;
+//     left: 50%;
+//     opacity: 1;
+// }
 .content {
+    background-size: cover;
+    background-position: center center;
     position: relative;
     margin: auto;
     overflow: hidden;
-    .content-overlay {
-        background: rgba(0, 0, 0, 0.7);
-        position: absolute;
-        height: 100%;
-        width: 100%;
-        left: 0;
-        top: 0;
-        bottom: 0;
-        right: 0;
-        opacity: 0;
-        -webkit-transition: all 0.4s ease-in-out 0s;
-        -moz-transition: all 0.4s ease-in-out 0s;
-        transition: all 0.4s ease-in-out 0s;
-    }
     &:hover .content-overlay {
         opacity: 1;
+        width: 100%;
+        height: 100%;
     }
-}
-
-.content-details {
-    position: absolute;
-    text-align: right;
-    padding-left: 1em;
-    padding-right: 1em;
-    width: 100%;
-    bottom: 0;
-    left: 50%;
-    opacity: 0;
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    -webkit-transition: all 0.3s ease-in-out 0s;
-    transition: all 0.3s ease-in-out 0s;
-    h3 {
-        color: $base-color;
-        font-size: 12px;
-        font-weight: 700;
-        margin-bottom: 0.5em;
-        text-transform: uppercase;
+    &:hover span {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -webkit-transition: transform .5s ease, opacity 1.3s ease;
+        transition: transform .5s ease, opacity 1.3s ease;
     }
-    p {
+    .content-overlay {
+        background: rgba(0, 0, 0, 0.4);
+        position: absolute;
+        margin: auto;
+        width: 0px;
+        height: 0px;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        opacity: 0;
+        -webkit-transition: .4s ease;
+        transition: .4s ease;
+    }
+    .content-text {
         color: #fff;
-        font-size: 15px;
         font-weight: 700;
+        text-align: right;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 8px;
+        bottom: 10px;
+        opacity: 0;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        -webkit-transition: transform .5s ease, opacity .7s ease;
+        transition: transform .5s ease, opacity .7s ease;
     }
-}
-
-.content:hover .content-details {
-    bottom: 0;
-    left: 50%;
-    opacity: 1;
+    .content-title {
+        color: $base-color;
+        font-weight: 700;
+        text-align: right;
+        position: absolute;
+        margin: auto;
+        left: 0;
+        right: 8px;
+        bottom: 30px;
+        opacity: 0;
+        -webkit-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        -webkit-transition: transform .5s ease, opacity .7s ease;
+        transition: transform .5s ease, opacity .7s ease;
+    }
 }
