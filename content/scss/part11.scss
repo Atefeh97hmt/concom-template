@@ -96,21 +96,22 @@
         //     opacity: 0.3;
         // }
     }
-    .black-box {
-        background-color: $black-color;
-        box-shadow: 0 0 15px $light-black;
-        position: relative;
+}
+
+.part11-box {
+    .slick-slide img {
+        display: inline-block!important;
+    }
+}
+
+.slick-center {
+    .single-box {
+        background-color: $black-color!important;
         h3 {
             color: $white-color;
         }
         p {
             color: $white-color;
         }
-    }
-}
-
-.part11-box {
-    .slick-slide img {
-        display: inline-block!important;
     }
 }

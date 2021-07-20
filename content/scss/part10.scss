@@ -25,11 +25,15 @@
     .nav-link {
         color: $white-color;
         border-radius: 0;
+        &:hover {
+            color: $base-color;
+        }
     }
     .nav-pills {
         .nav-link.active,
         .show>.nav-link {
             background-color: $base-color;
+            color: $white-color;
         }
     }
 }

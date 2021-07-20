@@ -8,7 +8,6 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-
     i {
         color: $base-color;
         position: absolute;
@@ -16,5 +15,11 @@
         top: 11px;
         text-align: center;
         font-size: 18px;
+    }
+    &:hover {
+        background-color: $base-color;
+        i {
+            color: $white-color;
+        }
     }
 }

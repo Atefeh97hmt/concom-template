@@ -12,6 +12,8 @@ $(window).on("scroll", function() {
 ////// sliders //////////
 
 $(document).ready(function() {
+
+
     $(".hero-slider").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
