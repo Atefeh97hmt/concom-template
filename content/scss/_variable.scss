@@ -1,8 +1,9 @@
 
 // color
 $base-color: #ffb923;
-$light-gray: #c0bfbf;
-$dark-gray: #494949;
+$light-gray: #a5a5a5 ;
+$dark-gray:  #575757;
+$text-gray: #2e2e2e;
 $black-color:#000000;
 $light-black:#333333;
 $white-color:#ffffff;
@@ -13,11 +14,22 @@ $base-color-rgba:rgba($base-color, 0.4);
 $font-size-13:13px;
 $font-size-14:14px;
 $font-size-15:15px;
+$font-size-16:16px;
+$font-size-17:17px;
+$font-size-18:18px;
 
 
+// width
 $width-100:100%;
 $width-50:50%;
 
+
+// font weight
 $font-weight-700:700;
 $font-weight-500:500;
+
+// line-height
+$line-height-30:30px;
+$line-height-32:32px;
+
 

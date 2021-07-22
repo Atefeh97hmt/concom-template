@@ -2,6 +2,11 @@
     background-color: $base-color;
     color: $white-color;
     border-radius: 0;
+    padding: 8px 30px;
+    font-weight: normal;
+    i{
+        margin-right: 10px;
+    }
     &:hover {
         background-color: $black-color;
         color: $white-color;

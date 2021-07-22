@@ -1,5 +1,5 @@
 body {
-    font-family: 'iransans' !important;
+    font-family:'iran-sans'!important;
     box-sizing: border-box;
     margin: 0;
     direction: rtl;
@@ -7,6 +7,8 @@ body {
     line-height: 24px;
     background-color: #fff;
     text-align: right;
+
+    
     &::-webkit-scrollbar {
         width: 15px;
     }

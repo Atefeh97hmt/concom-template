@@ -1,6 +1,6 @@
 .section-title {
     h4 {
-        font-size: 15px;
+        font-size: $font-size-16;
         color: $dark-gray;
         position: relative;
         margin-right: 37px;
@@ -14,15 +14,37 @@
             height: 2px;
             background-color: $base-color;
             right: -25px;
-            bottom: 5px;
+            bottom: 8px;
         }
+
+        
+    }
+    h3 {
+        font-size: 23px;
+        color: $dark-gray;
+        position: relative;
+        margin-right: 37px;
+        margin-bottom: 15px;
+        font-weight: $font-weight-700;
+
+        &:before {
+            content: "";
+            position: absolute;
+            width: 20px;
+            height: 2px;
+            background-color: $base-color;
+            right: -25px;
+            top: 14px;
+        }
+
+        
     }
 
     h2 {
-        font-size: 25px;
-        color: $dark-gray;
+        font-size: 24px;
+        color: $text-gray;
         font-weight: $font-weight-700;
-        line-height: 30px;
+        line-height: $line-height-30;
         margin-bottom: 15px;
 
         span {
@@ -32,11 +54,71 @@
     }
 
     p {
-        color: $dark-gray;
+        color: $text-gray;
         font-size: $font-size-14;
         margin-bottom: 20px;
+        line-height: $line-height-30;
 
     }
 
 
+}
+
+.twoline-title {
+
+
+    .twoline {
+        line-height: 0.5;
+        text-align: center;
+        margin-bottom: 25px;
+                span {
+          display: inline-block;
+          position: relative;
+      
+          &:before, &:after {
+            content: "";
+            position: absolute;
+            height: 5px;
+            border-bottom: 2px solid $base-color;
+            top: 0;
+            width: 20px;
+          }
+      
+          &:before {
+            right: 100%;
+            margin-right: 15px;
+          }
+      
+          &:after {
+            left: 100%;
+            margin-left: 15px;
+          }
+        }
+      }
+
+
+
+    h4 {
+        font-size: 17px;
+        color: $dark-gray;
+        position: relative;
+        font-weight: 700;
+        margin-bottom: 15px;
+   
+    }
+    h2 {
+        font-size: 30px;
+        color: $dark-gray;
+        font-weight: 700;
+        line-height: 30px;
+        margin-bottom: 15px;
+        span {
+            color: $base-color;
+        }
+    }
+    p {
+        color: $dark-gray;
+        font-size: $font-size-15;
+        margin-bottom: 20px;
+    }
 }

@@ -2,20 +2,25 @@
 @import "_variable";
 @import "_mixin";
 @import "_standard";
+
+
+
+@import "section-title";
+
 @import "header";
 @import "slider";
-@import "section-title";
-@import "part2";
-@import "part3";
-@import "part4";
-@import "part5";
-@import "part6";
-@import "part7";
-@import "part8";
-@import "part9";
-@import "part10";
-@import "part11";
-@import "part12";
+@import "under-slider-boxes";
+@import "aboutus";
+@import "whyus";
+@import "company-tab-section";
+@import "customer-section";
+@import "services";
+@import "counter-section";
+@import "support-team";
+@import "project";
+@import "Testimonial";
+@import "latest-news ";
 @import "footer";
+
 @import "btn";
 @import "totopbtn";

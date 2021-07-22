@@ -1,12 +1,13 @@
-.tab-section {
+.company-tab-section {
     img {
         max-width: 100%;
         max-height: 100%;
     }
     .nav-link {
-        color: $black-color;
+        color: $text-gray;
         border-radius: 0;
-        font-weight: $font-weight-500;
+        font-size: $font-size-16;
+        font-weight: $font-weight-700;
         &:hover {
             color: $base-color;
         }
@@ -22,4 +23,21 @@
             }
         }
     }
+
+
+
+    .company-content{
+        h3 {
+            font-size:22px;
+            color: $text-gray;
+            font-weight: $font-weight-700;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size:$font-size-14;
+            line-height: $line-height-30;
+        }
+
+    }
+
 }

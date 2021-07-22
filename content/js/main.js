@@ -10,29 +10,29 @@ $(window).on("scroll", function() {
 
 
 
-const texts = ['برای شما پروژه ایجاد میکنیم.', 'ما دنیای جدیدی رو برای شما ایجاد میکنیم.', ];
-const display = document.querySelector('.typing-text');
-let textIndex = 0;
-let characterIndex = 0;
-display.classList.add('typing');
+// const texts = ['برای شما پروژه ایجاد میکنیم.', 'ما دنیای جدیدی رو برای شما ایجاد میکنیم.', ];
+// const display = document.querySelector('.typing-text');
+// let textIndex = 0;
+// let characterIndex = 0;
+// display.classList.add('typing');
 
-setInterval(() => {
+// setInterval(() => {
 
-    if (characterIndex === texts[textIndex].length) {
-        characterIndex = 0;
-        if (textIndex === texts.length - 1) {
-            textIndex = 0;
-        } else {
-            textIndex++;
-        }
-        display.innerHTML = '';
-        return;
-    }
+//     if (characterIndex === texts[textIndex].length) {
+//         characterIndex = 0;
+//         if (textIndex === texts.length - 1) {
+//             textIndex = 0;
+//         } else {
+//             textIndex++;
+//         }
+//         display.innerHTML = '';
+//         return;
+//     }
 
-    display.innerHTML += texts[textIndex][characterIndex];
-    characterIndex++;
+//     display.innerHTML += texts[textIndex][characterIndex];
+//     characterIndex++;
 
-}, 60);
+// }, 60);
 
 
 
@@ -56,7 +56,7 @@ $(document).ready(function() {
         centerPadding: '0px',
     });
 
-    $(".customer-slider").slick({
+    $(".customer2-slider").slick({
         centerMode: true,
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -90,7 +90,7 @@ $(document).ready(function() {
             }
         ]
     });
-    $(".partner-slider").slick({
+    $(".customer-slider").slick({
         slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: true,
@@ -128,7 +128,11 @@ $(document).ready(function() {
 
 
 });
-
+const instance = new Typewriter('#typewriter', {
+    strings: ['ما پروژه ایجاد میکنیم', 'ما دنیای جدیدی را برای شما ایجاد میکنیم'],
+    autoStart: true,
+    loop: true,
+  });
 
 ////// scrollToTopBtn //////////
 
