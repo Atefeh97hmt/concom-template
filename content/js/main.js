@@ -1,6 +1,6 @@
 ﻿////// menu scroll //////////
 
-$(window).on("scroll", function() {
+$(window).on("scroll", function () {
     if ($(window).scrollTop() > 65) {
         $(".main-header").addClass("active");
     } else {
@@ -8,39 +8,9 @@ $(window).on("scroll", function() {
     }
 });
 
-
-
-// const texts = ['برای شما پروژه ایجاد میکنیم.', 'ما دنیای جدیدی رو برای شما ایجاد میکنیم.', ];
-// const display = document.querySelector('.typing-text');
-// let textIndex = 0;
-// let characterIndex = 0;
-// display.classList.add('typing');
-
-// setInterval(() => {
-
-//     if (characterIndex === texts[textIndex].length) {
-//         characterIndex = 0;
-//         if (textIndex === texts.length - 1) {
-//             textIndex = 0;
-//         } else {
-//             textIndex++;
-//         }
-//         display.innerHTML = '';
-//         return;
-//     }
-
-//     display.innerHTML += texts[textIndex][characterIndex];
-//     characterIndex++;
-
-// }, 60);
-
-
-
-
-
 ////// sliders //////////
 
-$(document).ready(function() {
+$(document).ready(function () {
 
 
     $(".hero-slider").slick({
@@ -56,7 +26,7 @@ $(document).ready(function() {
         centerPadding: '0px',
     });
 
-    $(".customer2-slider").slick({
+    $(".testimonial-slider").slick({
         centerMode: true,
         slidesToShow: 3,
         slidesToScroll: 1,
@@ -128,11 +98,14 @@ $(document).ready(function() {
 
 
 });
+
+////// Typewriter////////
 const instance = new Typewriter('#typewriter', {
     strings: ['ما پروژه ایجاد میکنیم', 'ما دنیای جدیدی را برای شما ایجاد میکنیم'],
     autoStart: true,
     loop: true,
-  });
+});
+
 
 ////// scrollToTopBtn //////////
 

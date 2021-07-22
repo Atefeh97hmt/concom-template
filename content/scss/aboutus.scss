@@ -10,25 +10,26 @@
     .about-card {
         margin-bottom: 15px;
         background-color: $white-color;
-        padding:25px;
+        padding: 25px;
         -webkit-box-shadow: 0 1px 10px rgba($black-color, 0.12), 0 1px 2px rgba($black-color, 0.24);
         box-shadow: 0 1px 10px rgba($black-color, 0.12), 0 1px 2px rgba($black-color, 0.24);
 
         h3 {
             font-size: $font-size-18;
-            color:$text-gray;
+            color: $text-gray;
             font-weight: $font-weight-700;
             margin-bottom: 15px;
         }
-p{
-    font-size: $font-size-14;
-            color:$dark-gray;
-line-height: $line-height-30;
-cursor: pointer;
-}
+
+        p {
+            font-size: $font-size-14;
+            color: $dark-gray;
+            line-height: $line-height-30;
+            cursor: pointer;
+        }
 
         i {
-            font-size:$font-size-16;
+            font-size: $font-size-16;
             margin-left: 10px;
 
         }
@@ -38,7 +39,7 @@ cursor: pointer;
     .blue-icon {
 
         &:after {
-            background-color: #0087e7;
+            background-color: #038df0;
             content: "";
             position: absolute;
             width: 12px;

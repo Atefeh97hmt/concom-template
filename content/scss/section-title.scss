@@ -17,8 +17,9 @@
             bottom: 8px;
         }
 
-        
+
     }
+
     h3 {
         font-size: 23px;
         color: $dark-gray;
@@ -37,7 +38,7 @@
             top: 14px;
         }
 
-        
+
     }
 
     h2 {
@@ -65,57 +66,60 @@
 }
 
 .twoline-title {
-
-
     .twoline {
         line-height: 0.5;
         text-align: center;
         margin-bottom: 25px;
-                span {
-          display: inline-block;
-          position: relative;
-      
-          &:before, &:after {
-            content: "";
-            position: absolute;
-            height: 5px;
-            border-bottom: 2px solid $base-color;
-            top: 0;
-            width: 20px;
-          }
-      
-          &:before {
-            right: 100%;
-            margin-right: 15px;
-          }
-      
-          &:after {
-            left: 100%;
-            margin-left: 15px;
-          }
+
+        span {
+            display: inline-block;
+            position: relative;
+
+            &:before,
+            &:after {
+                content: "";
+                position: absolute;
+                height: 5px;
+                border-bottom: 2px solid $base-color;
+                top: 0;
+                width: 20px;
+            }
+
+            &:before {
+                right: 100%;
+                margin-right: 15px;
+            }
+
+            &:after {
+                left: 100%;
+                margin-left: 15px;
+            }
         }
-      }
+    }
 
 
 
     h4 {
-        font-size: 17px;
+        font-size: $font-size-17;
         color: $dark-gray;
         position: relative;
-        font-weight: 700;
+        font-weight: $font-weight-700;
         margin-bottom: 15px;
-   
+
     }
+
     h2 {
         font-size: 30px;
         color: $dark-gray;
-        font-weight: 700;
+        font-weight: $font-weight-700;
         line-height: 30px;
         margin-bottom: 15px;
+
         span {
             color: $base-color;
         }
     }
+
     p {
         color: $dark-gray;
         font-size: $font-size-15;

@@ -20,13 +20,13 @@
         }
 
         i {
-            transition:transform  0.5s ease-in-out;
+            transition: transform 0.5s ease-in-out;
             font-size: 50px;
             color: $base-color;
         }
 
         h3 {
-            font-size:$font-size-18;
+            font-size: $font-size-18;
             color: $text-gray;
             font-weight: $font-weight-700;
             margin: 26px 0 15px;
@@ -35,7 +35,7 @@
         p {
             font-size: $font-size-15;
             color: $dark-gray;
-            line-height:$line-height-30;
+            line-height: $line-height-30;
         }
     }
 

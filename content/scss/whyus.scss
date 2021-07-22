@@ -1,22 +1,26 @@
     .whyus-section {
         background-color: #f5f5f5;
+
         .whyus-text {
             h3 {
-                font-size:$font-size-16;
+                font-size: $font-size-16;
                 color: $text-gray;
                 font-weight: $font-weight-700;
                 margin-bottom: 10px;
             }
+
             p {
-                font-size:$font-size-14;
+                font-size: $font-size-14;
                 line-height: $line-height-30;
             }
         }
+
         .whyus-icon {
             z-index: 1;
-    width: 50px;
-    position: relative;
-            &:before{
+            width: 50px;
+            position: relative;
+
+            &:before {
                 content: "";
                 position: absolute;
                 top: 14px;
@@ -29,6 +33,7 @@
 
             }
         }
+
         .whyus-button {
             font-size: $font-size-16;
             color: $base-color;
@@ -38,6 +43,7 @@
             padding: 0;
             position: relative;
             z-index: 2;
+
             &:before {
                 content: "";
                 position: absolute;
@@ -49,6 +55,7 @@
                 background-color: $base-color;
 
             }
+
             &:hover {
                 &:before {
                     bottom: 10px;
@@ -58,4 +65,3 @@
             }
         }
     }
-

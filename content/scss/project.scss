@@ -1,6 +1,7 @@
 .project-section {
     background-color: $black-color;
     padding: 30px 12px 0 0;
+
     img {
         width: 100%;
         height: 200px;
@@ -8,14 +9,18 @@
         max-height: 100%;
         display: block;
     }
+
     .nav-link {
         color: $white-color;
         border-radius: 0;
+
         &:hover {
             color: $base-color;
         }
     }
+
     .nav-pills {
+
         .nav-link.active,
         .show>.nav-link {
             background-color: $base-color;
@@ -30,11 +35,13 @@
     position: relative;
     margin: auto;
     overflow: hidden;
+
     &:hover .content-overlay {
         opacity: 1;
         width: 100%;
         height: 100%;
     }
+
     &:hover span {
         opacity: 1;
         -webkit-transform: scale(1);
@@ -42,8 +49,9 @@
         -webkit-transition: transform .5s ease, opacity 1.3s ease;
         transition: transform .5s ease, opacity 1.3s ease;
     }
+
     .content-overlay {
-        background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1));
+        background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 1));
         position: absolute;
         margin: auto;
         width: 0px;
@@ -56,10 +64,11 @@
         -webkit-transition: .4s ease;
         transition: .4s ease;
     }
+
     .content-text {
         color: #fff;
-        font-weight: 700;
-        font-size: 14px;
+        font-weight: $font-weight-700;
+        font-size: $font-size-14;
         text-align: right;
         position: absolute;
         margin: auto;
@@ -72,9 +81,10 @@
         -webkit-transition: transform .5s ease, opacity .7s ease;
         transition: transform .5s ease, opacity .7s ease;
     }
+
     .content-title {
         color: $base-color;
-        font-weight: 700;
+        font-weight: $font-weight-700;
         font-size: 10px;
         text-align: right;
         position: absolute;
