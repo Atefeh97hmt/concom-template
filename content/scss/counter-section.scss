@@ -7,8 +7,11 @@
     width: 100%;
     height: 100%;
     position: relative;
-    z-index: -1;
+    z-index: 1;
     .circle-counter {
+
+       
+
         position: relative;
         margin-top: 30px;
         p {
@@ -31,11 +34,17 @@
             height: 170px;
             border: 1px dashed $white-color;
             border-radius: 50%;
-            &:hover {
-                transition: 0.7s;
-                transform: rotateY( 360deg);
-            }
+            transition: 0.8s;
+
+        
         }
+        &:hover {
+            &:before {
+                        transform: rotateY( 360deg);
+    
+            }
+    
+                }
     }
 }
 

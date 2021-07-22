@@ -300,6 +300,11 @@ img {
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.25);
   }
 }
+.dropdown-menu .dropdown-submenu {
+  position: absolute;
+  right: 100% !important;
+}
+
 .slider {
   width: 100%;
   position: relative;
@@ -586,7 +591,80 @@ img {
   z-index: 0;
   background-color: #333333;
 }
+.whyus-section .whyus-background {
+  background-image: url("/content/image/team-bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.whyus-section .whyus-background:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #171818;
+  opacity: 0.7;
+}
 
+.sonar-wrapper {
+  position: relative;
+  z-index: 0;
+  overflow: hidden;
+  padding: 6rem;
+  cursor: pointer;
+}
+.sonar-wrapper i {
+  position: absolute;
+  top: 133px;
+  right: 130px;
+  z-index: 2;
+  font-size: 28px;
+  color: #ffb923;
+}
+
+.sonar-emitter {
+  position: relative;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+
+.sonar-wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #ffffff;
+  opacity: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.sonar-wave {
+  animation: sonarWave 2s linear infinite;
+}
+
+@keyframes sonarWave {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    transform: scale(3);
+    opacity: 0;
+  }
+}
 .company-tab-section img {
   max-width: 100%;
   max-height: 100%;
@@ -659,6 +737,8 @@ img {
 
 .services {
   margin-bottom: -40px;
+  z-index: 2;
+  position: relative;
 }
 .services .services-card {
   background-color: #ffffff;
@@ -667,6 +747,9 @@ img {
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   position: relative;
   margin-bottom: 20px;
+}
+.services .services-card img {
+  display: none;
 }
 .services .services-card:hover {
   background-color: #000000;
@@ -686,6 +769,12 @@ img {
 }
 .services .services-card:hover p {
   color: #ffffff;
+}
+.services .services-card:hover img {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
 .services .services-card p {
   font-size: 14px;
@@ -717,7 +806,7 @@ img {
   content: "";
   position: absolute;
   bottom: 10px;
-  right: 67px;
+  right: 52px;
   width: 30px;
   height: 2px;
   background-color: #ffb923;
@@ -733,7 +822,7 @@ img {
   width: 100%;
   height: 100%;
   position: relative;
-  z-index: -1;
+  z-index: 1;
 }
 .counter-section .circle-counter {
   position: relative;
@@ -759,9 +848,9 @@ img {
   height: 170px;
   border: 1px dashed #ffffff;
   border-radius: 50%;
+  transition: 0.8s;
 }
-.counter-section .circle-counter:before:hover {
-  transition: 0.7s;
+.counter-section .circle-counter:hover:before {
   transform: rotateY(360deg);
 }
 
@@ -1082,6 +1171,16 @@ img {
 .news .latest-news-description .read-more {
   color: #ffb923;
   font-size: 14px;
+  position: relative;
+}
+.news .latest-news-description .read-more:hover:before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  background-color: #ffb923;
+  left: -5px;
+  bottom: 8px;
 }
 .news .latest-news {
   cursor: pointer;
