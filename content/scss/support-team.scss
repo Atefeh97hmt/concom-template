@@ -37,6 +37,10 @@
                 i {
                     color: $base-color
                 }
+
+                .team-social-links {
+                    transform: scaleX(1);
+                }
             }
 
             .team-img {
@@ -83,6 +87,31 @@
                     color: $base-color;
                     text-align: center;
                     margin: 33px 0;
+                }
+            }
+
+
+            .team-social-links {
+                background-color: $base-color;
+                max-width: 100px;
+                max-height: 28px;
+                position: absolute;
+                bottom: 10px;
+                right: 5px;
+                width: 100%;
+                height: 100%;
+                transform: scaleX(0);
+                transition: all 0.5s;
+                clip-path: polygon(10% 0,100% 0,100% 100%,0 100%,0 40%);
+                a {
+
+                    padding: 4px;
+
+                    i {
+                        color: $white-color;
+                        font-size: 20px;
+                        margin-top: 4px;
+                    }
                 }
             }
         }
