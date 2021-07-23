@@ -47,57 +47,96 @@
         }
     }
 
-    .bottom-nav {
+
+
+
+
+    .bottom-nav nav {
         border-bottom: 1px solid $base-color-rgba;
         border-top: 1px dashed $base-color-rgba;
+        .nav-item {
+                
+               
 
-        .navbar-nav {
-            .nav-item {
-                .dropdown-menu {
-                    background-color: $black-color;
-                    text-align: right;
-                    right: 0;
-                    top: 49px;
-
-                    a {
-                        &:hover {
-                            background-color: $black-color;
-                            color: $base-color;
-                        }
-                    }
-                }
-
-                a {
-                    font-size: $font-size-14;
-                    color: $white-color;
-                }
-
-                a.active {
-                    color: $base-color !important;
-
-                    &:before {
-                        content: '';
-                        position: absolute;
-                        top: 40px;
-                        left: 0;
-                        right: -17px;
-                        margin: auto;
-                        width: 0;
-                        height: 0;
-                        border-left: 8px solid transparent;
-                        border-right: 8px solid transparent;
-                        border-bottom: 12px solid $base-color;
-                        opacity: 0.7;
-                    }
-                }
-
-                .nav-link {
-                    &:hover {
-                        color: $base-color;
-                    }
+            .nav-link {
+                &:hover {
+                    color: $base-color;
                 }
             }
         }
+        .navbar-nav .nav-item {
+          position: relative;
+      
+          .dropdown-menu {
+            position: absolute;
+            text-align: right;
+            right: 0;
+            top: 49px;
+            z-index: 99;
+            display: block;
+            opacity: 0;
+            visibility: hidden;
+            -webkit-transition: all .3s ease-in-out;
+            transition: all .3s ease-in-out;
+            border-radius: 0;
+            padding: 5;
+            background-color: $black-color;
+          
+
+            a {
+                &:hover {
+                    background-color: $black-color;
+                    color: $base-color;
+                }
+            }
+            li {
+              .dropdown-menu {
+                position: absolute;
+                right: 100%;
+                top: 0;
+                opacity: 0 !important;
+                visibility: hidden !important;
+              }
+      
+              &:hover .dropdown-menu {
+                opacity: 1 !important;
+                visibility: visible !important;
+              }
+            }
+          }
+      
+          &:hover ul {
+            opacity: 1;
+            visibility: visible;
+          }
+
+          a {
+            font-size: $font-size-14;
+            color: $white-color;
+        }
+
+        a.active {
+            color: $base-color !important;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: 40px;
+                left: 0;
+                right: -17px;
+                margin: auto;
+                width: 0;
+                height: 0;
+                border-left: 8px solid transparent;
+                border-right: 8px solid transparent;
+                border-bottom: 12px solid $base-color;
+                opacity: 0.7;
+            }
+        }
+
+
+        }
+
 
         .quote-btn {
             .quote-btn-style {
@@ -110,15 +149,9 @@
             }
         }
 
-        .dropdown {
-            &:hover {
-                .dropdown-menu {
-                    display: block;
-                    margin-top: 0;
-                }
-            }
-        }
-    }
+
+      }
+    
 }
 
 @media (max-width: 991px) {
@@ -167,12 +200,3 @@
 
 
 
-
-
-  .dropdown-menu .dropdown-submenu {
-    position: absolute;
-    right: 100%!important;
-  }
-  
- 
- 
