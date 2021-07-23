@@ -866,6 +866,7 @@ img {
 
 .counter-section {
   background-image: url("/content/image/counter-bg.png");
+  background-color: #ffb923;
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;

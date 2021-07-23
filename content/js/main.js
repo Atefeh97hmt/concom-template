@@ -1,5 +1,4 @@
-﻿
-////// menu scroll //////////
+﻿////// menu scroll //////////
 
 $(window).on("scroll", function () {
     if ($(window).scrollTop() > 65) {
@@ -12,7 +11,6 @@ $(window).on("scroll", function () {
 ////// sliders //////////
 
 $(document).ready(function () {
-
 
     $(".hero-slider").slick({
         slidesToShow: 1,
@@ -144,7 +142,6 @@ function erase() {
 document.addEventListener("DOMContentLoaded", function() { 
   if(textArray.length) setTimeout(type, newTextDelay + 250);
 }); 
-
 
 
 ////// scrollToTopBtn //////////

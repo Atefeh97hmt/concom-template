@@ -1,5 +1,6 @@
 .counter-section {
     background-image: url('/content/image/counter-bg.png');
+    background-color: $base-color;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -9,9 +10,6 @@
     position: relative;
     z-index: 1;
     .circle-counter {
-
-       
-
         position: relative;
         margin-top: 30px;
         p {
