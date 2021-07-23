@@ -235,8 +235,8 @@ img {
   display: block;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
   border-radius: 0;
   padding: 5;
   background-color: #000000;

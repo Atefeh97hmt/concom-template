@@ -11,7 +11,6 @@
             color: $base-color;
         }
     }
-
     .top-nav {
         .contact-info {
             a {
@@ -46,18 +45,10 @@
             }
         }
     }
-
-
-
-
-
     .bottom-nav nav {
         border-bottom: 1px solid $base-color-rgba;
         border-top: 1px dashed $base-color-rgba;
         .nav-item {
-                
-               
-
             .nav-link {
                 &:hover {
                     color: $base-color;
@@ -66,7 +57,6 @@
         }
         .navbar-nav .nav-item {
           position: relative;
-      
           .dropdown-menu {
             position: absolute;
             text-align: right;
@@ -76,8 +66,8 @@
             display: block;
             opacity: 0;
             visibility: hidden;
-            -webkit-transition: all .3s ease-in-out;
-            transition: all .3s ease-in-out;
+            -webkit-transition: all .5s ease-in-out;
+            transition: all .5s ease-in-out;
             border-radius: 0;
             padding: 5;
             background-color: $black-color;
