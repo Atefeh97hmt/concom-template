@@ -33,14 +33,6 @@ p {
   margin: 0;
 }
 
-.dri_rtl {
-  direction: rtl;
-}
-
-.dri_ltr {
-  direction: ltr;
-}
-
 .w-50 {
   width: 50%;
 }
