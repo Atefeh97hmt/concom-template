@@ -190,6 +190,9 @@ img {
 .main-header .navbar-toggler i {
   color: #ffb923;
 }
+.main-header .top-nav.display-none {
+  display: none;
+}
 .main-header .top-nav .contact-info a {
   color: #a5a5a5;
   font-weight: 500;

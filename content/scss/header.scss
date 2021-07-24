@@ -5,11 +5,13 @@
     width: 100%;
     z-index: 100;
     background-color: $black-rgba;
-
     .navbar-toggler {
         i {
             color: $base-color;
         }
+    }
+    .top-nav.display-none {
+        display: none;
     }
     .top-nav {
         .contact-info {
@@ -17,14 +19,12 @@
                 color: $light-gray;
                 font-weight: $font-weight-500;
                 font-size: $font-size-13;
-
                 i {
                     color: $base-color;
                     padding-left: 5px;
                 }
             }
         }
-
         .header-help-and-social {
             .social-links {
                 a {
@@ -35,7 +35,6 @@
                     }
                 }
             }
-
             .help-desk {
                 a {
                     color: $light-gray;
@@ -56,78 +55,67 @@
             }
         }
         .navbar-nav .nav-item {
-          position: relative;
-          .dropdown-menu {
-            position: absolute;
-            text-align: right;
-            right: 0;
-            top: 49px;
-            z-index: 99;
-            display: block;
-            opacity: 0;
-            visibility: hidden;
-            -webkit-transition: all .5s ease-in-out;
-            transition: all .5s ease-in-out;
-            border-radius: 0;
-            padding: 5;
-            background-color: $black-color;
-          
-
-            a {
-                &:hover {
-                    background-color: $black-color;
-                    color: $base-color;
+            position: relative;
+            .dropdown-menu {
+                position: absolute;
+                text-align: right;
+                right: 0;
+                top: 49px;
+                z-index: 99;
+                display: block;
+                opacity: 0;
+                visibility: hidden;
+                -webkit-transition: all .5s ease-in-out;
+                transition: all .5s ease-in-out;
+                border-radius: 0;
+                padding: 5;
+                background-color: $black-color;
+                a {
+                    &:hover {
+                        background-color: $black-color;
+                        color: $base-color;
+                    }
+                }
+                li {
+                    .dropdown-menu {
+                        position: absolute;
+                        right: 100%;
+                        top: 0;
+                        opacity: 0 !important;
+                        visibility: hidden !important;
+                    }
+                    &:hover .dropdown-menu {
+                        opacity: 1 !important;
+                        visibility: visible !important;
+                    }
                 }
             }
-            li {
-              .dropdown-menu {
-                position: absolute;
-                right: 100%;
-                top: 0;
-                opacity: 0 !important;
-                visibility: hidden !important;
-              }
-      
-              &:hover .dropdown-menu {
-                opacity: 1 !important;
-                visibility: visible !important;
-              }
+            &:hover ul {
+                opacity: 1;
+                visibility: visible;
             }
-          }
-      
-          &:hover ul {
-            opacity: 1;
-            visibility: visible;
-          }
-
-          a {
-            font-size: $font-size-14;
-            color: $white-color;
-        }
-
-        a.active {
-            color: $base-color !important;
-
-            &:before {
-                content: '';
-                position: absolute;
-                top: 40px;
-                left: 0;
-                right: -17px;
-                margin: auto;
-                width: 0;
-                height: 0;
-                border-left: 8px solid transparent;
-                border-right: 8px solid transparent;
-                border-bottom: 12px solid $base-color;
-                opacity: 0.7;
+            a {
+                font-size: $font-size-14;
+                color: $white-color;
+            }
+            a.active {
+                color: $base-color !important;
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 40px;
+                    left: 0;
+                    right: -17px;
+                    margin: auto;
+                    width: 0;
+                    height: 0;
+                    border-left: 8px solid transparent;
+                    border-right: 8px solid transparent;
+                    border-bottom: 12px solid $base-color;
+                    opacity: 0.7;
+                }
             }
         }
-
-
-        }
-
-
         .quote-btn {
             .quote-btn-style {
                 background-color: $base-color;
@@ -138,10 +126,7 @@
                 font-size: $font-size-15;
             }
         }
-
-
-      }
-    
+    }
 }
 
 @media (max-width: 991px) {
@@ -149,17 +134,14 @@
         display: flex;
         flex-direction: row-reverse;
     }
-
     .top-nav {
         display: none;
     }
-
     .main-header {
         background: $black-color;
         -webkit-box-shadow: 0 1px 10px rgba($black-color, 0.12), 0 1px 2px rgba($black-color, 0.24);
         box-shadow: 0 1px 10px rgba($black-color, 0.12), 0 1px 2px rgba($black-color, 0.24);
     }
-
     a.active {
         &:before {
             display: none;
@@ -187,6 +169,3 @@
         box-shadow: 0 1px 5px rgba($black-color, 0.25);
     }
 }
-
-
-
