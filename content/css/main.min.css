@@ -348,6 +348,11 @@ img {
   right: 0px;
   top: 12px;
 }
+.slider .slider-text .typing-slider .typewrite {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 500;
+}
 
 .hero-slider img {
   height: 100vh;
@@ -404,43 +409,6 @@ img {
   }
   .slider-text h5 {
     font-size: 13px;
-  }
-}
-.type-writer h4 {
-  overflow: hidden;
-}
-
-.type-writer h4 span.typed-text {
-  color: #fff;
-}
-
-.type-writer h4 span.cursor {
-  display: inline-block;
-  background-color: #ccc;
-  margin-left: 0.1rem;
-  width: 3px;
-  animation: blink 1s infinite;
-}
-
-.type-writer h4 span.cursor.typing {
-  animation: none;
-}
-
-@keyframes blink {
-  0% {
-    background-color: #ccc;
-  }
-  49% {
-    background-color: #ccc;
-  }
-  50% {
-    background-color: transparent;
-  }
-  99% {
-    background-color: transparent;
-  }
-  100% {
-    background-color: #ccc;
   }
 }
 .under-header-box {
